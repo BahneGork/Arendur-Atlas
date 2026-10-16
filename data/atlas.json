@@ -91,29 +91,6 @@
    "noteId": null
   },
   "goblin-caves": {
-   "name": "Goblinhulerne ved Arendur",
-   "kind": "hule",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "parent": "arendur",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Røde hånd-gobliner. Goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6).",
-   "url": "",
-   "sessions": [
-    1
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "gutbust": {
    "name": "Gutbust-hulerne",
    "kind": "hule",
    "map": null,
@@ -124,13 +101,17 @@
    "offmap": null,
    "where": "",
    "aliases": [
-    "Gutbuster"
+    "Goblinhulerne ved Arendur",
+    "Gutbuster",
+    "Gutbust hulerne"
    ],
    "travel": "",
    "travelLost": false,
-   "summary": "Huler uden for Arendur (missionen Gutbuster Ooze).",
+   "summary": "Goblinhulerne uden for Arendur (missionen Gutbuster Ooze; samme sted ifølge Bahne). Røde hånd-gobliner: goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    1
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -149,12 +130,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "En gård uden for Arendur.",
+   "summary": "En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den (ifølge Bahne).",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "kvalec": {
@@ -1560,14 +1541,14 @@
  "sessions": [
   {
    "num": 1,
-   "title": "Oozebusters og goblinhulerne",
+   "title": "Oozebusters og Gutbust-hulerne",
    "places": [
     "goblin-caves"
    ],
    "url": "",
    "date": "",
    "gm": "",
-   "summary": "Røde hånd-gobliner i hulerne ved Arendur. Goblin boss Krazkar falder, warlocken Moogzt undslipper (K1–K10).",
+   "summary": "Røde hånd-gobliner i Gutbust-hulerne ved Arendur. Goblin boss Krazkar falder, warlocken Moogzt undslipper (K1–K10).",
    "noteId": "the-shadow-company-book-1-red-hand-of-doom"
   },
   {

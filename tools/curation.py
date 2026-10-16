@@ -58,13 +58,12 @@ PLACES = {
     "arendur": dict(note="", map="ursia", at=[4433, 3040], kind="by", visited=True,
                     summary="Hovedstaden, omgivet af den store mur som dværgene byggede (K95). "
                             "Her begyndte kompagniets historie med goblinhulerne tæt ved byen (K1)."),
-    "goblin-caves": dict(note="", parent="arendur", kind="hule", name="Goblinhulerne ved Arendur", visited=True,
-                         summary="Røde hånd-gobliner. Goblin boss Krazkar blev besejret, warlocken Moogzt "
-                                 "undslap (K1–K6)."),
-    "gutbust": dict(note="", parent="arendur", kind="hule", name="Gutbust-hulerne", visited=True,
-                    aliases=["Gutbuster"], summary="Huler uden for Arendur (missionen Gutbuster Ooze)."),
-    "farmer-john": dict(note="", parent="arendur", kind="sted", name="Farmer Johns gård",
-                        summary="En gård uden for Arendur."),
+    "goblin-caves": dict(note="", parent="arendur", kind="hule", name="Gutbust-hulerne", visited=True,
+                         aliases=["Goblinhulerne ved Arendur", "Gutbuster", "Gutbust hulerne"],
+                         summary="Goblinhulerne uden for Arendur (missionen Gutbuster Ooze; samme sted ifølge Bahne). "
+                                 "Røde hånd-gobliner: goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6)."),
+    "farmer-john": dict(note="", parent="arendur", kind="sted", name="Farmer Johns gård", visited=True,
+                        summary="En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den (ifølge Bahne)."),
     "kvalec": dict(note="", map="ursia", at=[1672, 3369], kind="by",
                    summary="By mod vest. Lejesoldaterne Blackdaggers kom herfra (K2)."),
     "east-blackwood": dict(note="", map="ursia", at=[4752, 4066], approx=True, kind="vildmark",
@@ -195,8 +194,8 @@ REGIONS = {}
 # played in isn't recorded (owner, 2026-10-16), so these are stages, not sessions.
 CHRONICLE = "The Shadow Company - book 1 - Red hand of doom."
 SESSIONS = [
-    (1, "Oozebusters og goblinhulerne", ["goblin-caves"], CHRONICLE,
-     "Røde hånd-gobliner i hulerne ved Arendur. Goblin boss Krazkar falder, warlocken Moogzt undslipper (K1–K10)."),
+    (1, "Oozebusters og Gutbust-hulerne", ["goblin-caves"], CHRONICLE,
+     "Røde hånd-gobliner i Gutbust-hulerne ved Arendur. Goblin boss Krazkar falder, warlocken Moogzt undslipper (K1–K10)."),
     (2, "Gennem Underdark", ["camp-oxbar"], CHRONICLE,
      "The Fulcrom hyrer holdet til at undersøge gobliner sydpå. Undervejs reddes dværgen Oxbars ekspedition (K12–K13)."),
     (3, "Det sunkne citadel", ["sunken-citadel"], CHRONICLE,
