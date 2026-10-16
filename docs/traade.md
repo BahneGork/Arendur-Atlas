@@ -1,3 +1,0 @@
-# Tråde
-
-Ingen tråde endnu.

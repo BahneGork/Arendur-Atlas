@@ -3,16 +3,12 @@
 This document extends the general Claude instructions with project-specific requirements.
 
 ## Project Context
-An interactive **player atlas** for the owner's Arendur Rising campaign (the group: the Shadow Company). The owner is the **GM**. It's a static Leaflet site on GitHub Pages, seeded from the Erukana atlas (`../Atlassian`). Curated by Claude from the notes; see the `campaign-atlas` skill and `docs/assessment.md`.
+The **public, generated** players' edition of the Arendur atlas (GitHub Pages). It is written by `python3 tools/build.py --players ../Arendur-Atlas` in the private repo `../Arendur-Atlas-GM` (BahneGork/Arendur-Atlas-GM), which holds the GM data, the curation and the build.
 
 ## Additional Requirements
-- **Spoiler safety (most important)**: the site and repo are public and the players read them. Atlas text may only state what the players know: the Player Vault (chronicle, locations list, missions, handouts), the player map `EastBlackwood-PC.png`, and maps/handouts the players have seen. Claude may read all GM notes (owner's permission) to understand the campaign, but never copies GM-only facts into the atlas. When unsure whether players know something, ask.
-- **No owner attribution on the site**: facts the owner (the GM) tells Claude go into the atlas as plain facts. Never write "ifølge Bahne" or similar in panel text; record the source in a code comment in `curation.py` instead.
-- The build only reads the folders in `CAMPAIGN["notes_dirs"]` (`tools/curation.py`). Never add a GM folder there.
-- Every placement and panel statement must trace to a source; chronicle points are cited as (K12).
-- Read notes only; never modify the vault or the GMnostes repo from this project.
-- **Keep GitHub up to date**: repo `BahneGork/Arendur-Atlas`. After every change, commit and push to `main`. Run `git pull --rebase` first (Actions and the site's "Gem for alle" also push).
-- A GM layer may come later; it must never be built into or deployed from this public repo.
+- **Never edit or add files here by hand**, and never copy anything from the GM repo here except through its build (which filters to `players=True` and runs a leak check).
+- All work on the atlas happens in `../Arendur-Atlas-GM`; see its CLAUDE.md.
+- After a players' build: commit and push here (`git pull --rebase` first).
 
 ## Overrides
 None yet.
