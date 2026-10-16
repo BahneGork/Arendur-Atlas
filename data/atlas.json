@@ -898,12 +898,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Anton har været i kirkeruinerne.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "ravenscrest": {
@@ -1283,15 +1283,18 @@
    "region": null,
    "offmap": null,
    "where": "",
-   "aliases": [],
+   "aliases": [
+    "St. Gaed kirken",
+    "St. Gaed"
+   ],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "St. Gaed-kirken. Brumor har været i kirken.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "jagos-jewel": {

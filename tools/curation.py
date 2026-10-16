@@ -143,11 +143,12 @@ PLACES = {
 
     # --- Delios (the owner's pins) ---
     # Delios visits below (inn, tavern, bookshop, professor, stables, Milly Bell, Jago's Jewel, Operation Mongoose,
-    # Brumor's soup kitchen): per the owner (2026-10-16).
+    # church ruins (Anton), St. Gaed (Brumor), Brumor's soup kitchen): per the owner (2026-10-16).
     "dusty-tome": dict(note="", map="delios", at=[4654, 2016], parent="delios", kind="sted", name="Dusty Tome – boghandel",
                        visited=True, summary="Anton har besøgt boghandleren."),
     "tower-ruins": dict(note="", map="delios", at=[4716, 939], parent="delios", kind="taarn", name="Tårnruinen"),
-    "old-church": dict(note="", map="delios", at=[5047, 1008], parent="delios", kind="helligt", name="Den gamle kirkeruin"),
+    "old-church": dict(note="", map="delios", at=[5047, 1008], parent="delios", kind="helligt", name="Den gamle kirkeruin",
+                       visited=True, summary="Anton har været i kirkeruinerne."),
     "ravenscrest": dict(note="", map="delios", at=[4707, 2693], parent="delios", kind="sted", name="Ravenscrest Emporium"),
     "egas-mannon": dict(note="", map="delios", at=[4873, 3024], parent="delios", kind="sted", name="Professor Egas Mannon",
                         visited=True, summary="Anton lærte af Egas Mannon og fik Book of the Raven (K99–K100)."),
@@ -170,7 +171,9 @@ PLACES = {
                        visited=True, summary="Gruppen har været i The Milly Bell."),
     "town-hall": dict(note="", map="delios", at=[4099, 2311], parent="delios", kind="borg", name="Town Hall",
                       summary="Cedric var blandt VIP-gæsterne i borgmesterboligen under festivalen (K64)."),
-    "gaeds-sanctuary": dict(note="", map="delios", at=[3982, 1830], parent="delios", kind="helligt", name="Gaed's sanctuary"),
+    "gaeds-sanctuary": dict(note="", map="delios", at=[3982, 1830], parent="delios", kind="helligt", name="Gaed's sanctuary",
+                            aliases=["St. Gaed kirken", "St. Gaed"], visited=True,
+                            summary="St. Gaed-kirken. Brumor har været i kirken."),
     "jagos-jewel": dict(note="", map="delios", at=[3414, 1674], parent="delios", kind="sted", name="Jago's Jewel",
                         visited=True, summary="Gruppen har været i Jago's Jewel."),
 
