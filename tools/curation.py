@@ -68,7 +68,7 @@ PLACES = {
     "kvalec": dict(note="", name="Kvalec", map="ursia", at=[1672, 3369], kind="by",
                    summary="By mod vest. Lejesoldaterne Blackdaggers kom herfra (K2)."),
     # scroll=True: drawn as a scroll that opens the East Blackwood map (owner's idea, 2026-10-16).
-    "east-blackwood": dict(note="", scroll=True, map="ursia", at=[5057, 4359], approx=True, kind="vildmark",
+    "east-blackwood": dict(note="", scroll=True, map="ursia", at=[5071, 4391], approx=True, kind="vildmark",
                            name="East Blackwood",
                            where="Skoven i Bedegaarn-baroniet.",
                            summary="Skovegnen omkring Delios og Teslions, hvor det meste af kompagniets "
@@ -78,12 +78,12 @@ PLACES = {
     # also=[(map, at, approx)]: the same place on further maps. The Ursia positions are estimates around the
     # owner's pin "Bedegaarn barony – Duke Alvares" (4752, 4066), in the open land north of the forest.
     "delios": dict(note="", name="Delios", map="blackwood", at=[707, 465], kind="by", visited=True,
-                   also=[("ursia", [4600, 4250], True)],
+                   also=[("ursia", [4895, 4157], True)],
                    summary="By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), "
                            "og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110). "
                            "Brumor har sat et gadekøkken op for byens hjemløse."),
     "teslions": dict(note="", name="Teslions", map="blackwood", at=[858, 768], kind="by", visited=True,
-                     also=[("ursia", [5300, 4650], True)],
+                     also=[("ursia", [5261, 4115], True)],
                      summary="Den sidste by før grænsen. Fik tid til at evakuere, fordi gruppen ødelagde "
                              "Skullgorge-broen (K24), men blev senere overrendt af horden (K38)."),
     "logen": dict(note="", parent="teslions", kind="sted", name="Logen i Teslions"),
@@ -117,7 +117,7 @@ PLACES = {
                        where="Nordvest for Delios (de spilledes stedliste).",
                        summary="En ranger, der har overlevet en kamp med den sorte drage (K106)."),
     "bedegaarn": dict(note="", map="blackwood", at=[978, 305], kind="borg", name="Bedegaarn",
-                      also=[("ursia", [4752, 4066], True)],
+                      also=[("ursia", [4757, 3953], True)],
                       summary="Baroniets 'hovedstad' og sæde."),
     "click-claw": dict(note="", map="blackwood", at=[740, 525], approx=True, kind="borg", name="Click Claw Watch",
                        visited=True, where="Ved vejen gennem bakkelandet op mod Delios.",
