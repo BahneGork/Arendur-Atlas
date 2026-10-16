@@ -75,6 +75,7 @@
     3040
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -96,6 +97,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "arendur",
    "region": null,
    "offmap": null,
@@ -123,6 +125,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "arendur",
    "region": null,
    "offmap": null,
@@ -147,6 +150,7 @@
     3369
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -171,10 +175,11 @@
     4359
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
-   "where": "I Bedegaarn-baroniet, efter ejerens pin 'Bedegaarn barony – Duke Alvares'.",
+   "where": "Skoven i Bedegaarn-baroniet.",
    "aliases": [],
    "travel": "",
    "travelLost": false,
@@ -195,6 +200,16 @@
     465
    ],
    "approx": false,
+   "also": [
+    {
+     "map": "ursia",
+     "at": [
+      4600,
+      4250
+     ],
+     "approx": true
+    }
+   ],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -223,6 +238,16 @@
     768
    ],
    "approx": false,
+   "also": [
+    {
+     "map": "ursia",
+     "at": [
+      5300,
+      4650
+     ],
+     "approx": true
+    }
+   ],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -247,6 +272,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "teslions",
    "region": null,
    "offmap": null,
@@ -268,6 +294,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "teslions",
    "region": null,
    "offmap": null,
@@ -292,6 +319,7 @@
     885
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -315,6 +343,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "lady-dagger-caves",
    "region": null,
    "offmap": null,
@@ -341,6 +370,7 @@
     868
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -365,6 +395,7 @@
     745
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -391,6 +422,7 @@
     800
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -417,6 +449,7 @@
     630
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -446,6 +479,7 @@
     140
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -470,6 +504,7 @@
     210
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -494,6 +529,7 @@
     400
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -518,6 +554,16 @@
     305
    ],
    "approx": false,
+   "also": [
+    {
+     "map": "ursia",
+     "at": [
+      4752,
+      4066
+     ],
+     "approx": true
+    }
+   ],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -542,6 +588,7 @@
     525
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -568,6 +615,7 @@
     495
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -595,6 +643,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "raven-tomb",
    "region": null,
    "offmap": null,
@@ -621,6 +670,7 @@
     575
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -647,6 +697,7 @@
     610
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -673,6 +724,7 @@
     660
    ],
    "approx": true,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -699,6 +751,7 @@
     25
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -723,6 +776,7 @@
     178
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -747,6 +801,7 @@
     555
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -771,6 +826,7 @@
     810
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -795,6 +851,7 @@
     445
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -819,6 +876,7 @@
     445
    ],
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": null,
@@ -843,6 +901,7 @@
     2016
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -867,6 +926,7 @@
     939
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -891,6 +951,7 @@
     1008
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -915,6 +976,7 @@
     2693
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -939,6 +1001,7 @@
     3024
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -965,6 +1028,7 @@
     2554
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -989,6 +1053,7 @@
     2879
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1013,6 +1078,7 @@
     2746
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1037,6 +1103,7 @@
     3268
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1061,6 +1128,7 @@
     3106
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1085,6 +1153,7 @@
     2811
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1109,6 +1178,7 @@
     3151
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1133,6 +1203,7 @@
     3628
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1157,6 +1228,7 @@
     3946
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1181,6 +1253,7 @@
     2673
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1205,6 +1278,7 @@
     2486
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1229,6 +1303,7 @@
     2224
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1253,6 +1328,7 @@
     2311
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1279,6 +1355,7 @@
     1830
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1306,6 +1383,7 @@
     1674
    ],
    "approx": false,
+   "also": [],
    "parent": "delios",
    "region": null,
    "offmap": null,
@@ -1327,6 +1405,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": "other",
@@ -1350,6 +1429,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "rirroneth",
    "region": null,
    "offmap": null,
@@ -1375,6 +1455,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": "rirroneth",
    "region": null,
    "offmap": null,
@@ -1396,6 +1477,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": "other",
@@ -1419,6 +1501,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": "other",
@@ -1440,6 +1523,7 @@
    "map": null,
    "at": null,
    "approx": false,
+   "also": [],
    "parent": null,
    "region": null,
    "offmap": "other",

@@ -80,9 +80,9 @@
   }
 
   const markers = {};
-  function seal(id) {
+  function seal(id, approx = places[id].approx) {
     const p = places[id];
-    const cls = ["pin", p.visited && "visited", p.approx && "approx", hasTravel(id) && "travel", hasTravel(id) && travelLost(id) && "travel-lost"].filter(Boolean).join(" ");
+    const cls = ["pin", p.visited && "visited", approx && "approx", hasTravel(id) && "travel", hasTravel(id) && travelLost(id) && "travel-lost"].filter(Boolean).join(" ");
     return L.divIcon({
       className: cls, iconSize: [30, 38], iconAnchor: [15, 38],
       html: `<div class="pin-seal" role="img" aria-label="${p.name}"><svg viewBox="0 0 30 38" aria-hidden="true">
@@ -101,6 +101,17 @@
     markers[id] = m;
   }
   for (const [id, p] of Object.entries(places)) if (p.at) addMarker(id);
+  // The same place shown on further maps (e.g. a town on both the region map and the country map).
+  const extraMarkers = [];
+  for (const [id, p] of Object.entries(places)) {
+    for (const x of p.also || []) {
+      const m = L.marker(ll(x.at), { icon: seal(id, x.approx), keyboard: true, riseOnHover: true });
+      m.bindTooltip(p.name, { className: "pin-label", direction: "top", offset: [0, -38] });
+      m.on("click", () => go(`sted/${id}`));
+      m.addTo(layers[x.map].pins);
+      extraMarkers.push([id, m]);
+    }
+  }
   const regionLayers = {};
   for (const [id, r] of Object.entries(regions)) {
     if (!r.poly) continue;
@@ -131,6 +142,14 @@
       e.classList.toggle("moved", !!edits[id]);
       m.options.draggable = pinState.editing;
       if (m.dragging) pinState.editing ? m.dragging.enable() : m.dragging.disable();
+    }
+    for (const [id, m] of extraMarkers) {
+      const e = m.getElement();
+      if (!e) continue;
+      e.classList.toggle("selected", id === pinState.selected);
+      e.classList.toggle("current", !!pinState.here?.has(id));
+      e.classList.toggle("dim", (!!pinState.seen && !pinState.seen.has(id)) || (!!pinState.lit && !pinState.lit.has(id)));
+      e.classList.toggle("hidden", (pinState.onlyVisited && !places[id].visited) || (pinState.onlyTravel && !hasTravel(id)));
     }
   }
 
@@ -173,6 +192,13 @@
 
   function focusPin(id) {
     const a = anchor(id);
+    // Stay on the current map when the place has a pin here too.
+    const here = a && (places[a].also || []).find((x) => x.map === current);
+    if (here) {
+      const pt = ll(here.at);
+      flyWithin(L.latLngBounds(pt, pt), { maxZoom: Math.max(map.getZoom(), -0.75), duration: 0.6, paddingBottomRight: panelPadding() });
+      return;
+    }
     const target = mapOf(id);
     if (target) showMap(target, false);
     if (a) {

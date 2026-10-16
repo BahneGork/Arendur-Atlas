@@ -393,6 +393,7 @@ def main():
         places[pid] = {
             "name": p.get("name", p["note"]), "kind": p["kind"],
             "map": p.get("map"), "at": p.get("at"), "approx": p.get("approx", False),
+            "also": [{"map": m, "at": at, "approx": approx} for m, at, approx in p.get("also", [])],
             "parent": p.get("parent"), "region": p.get("region"), "offmap": p.get("offmap"),
             "where": p.get("where", ""), "aliases": p.get("aliases", []), "travel": p.get("travel", ""), "travelLost": p.get("travel_lost", False),
             "summary": p.get("summary") or (summarize(n["body"], note_id) if n else ""),
