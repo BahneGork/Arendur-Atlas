@@ -1092,12 +1092,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Gruppen har været i Osric's Gold Loaf.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "black-portrait": {

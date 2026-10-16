@@ -143,7 +143,7 @@ PLACES = {
 
     # --- Delios (the owner's pins) ---
     # Delios visits below (inn, tavern, bookshop, professor, stables, Milly Bell, Jago's Jewel, Operation Mongoose,
-    # church ruins (Anton), St. Gaed and the Oathstone (Brumor), herbalist ("vist"), Brumor's soup kitchen): per the owner (2026-10-16).
+    # church ruins (Anton), St. Gaed and the Oathstone (Brumor), herbalist and Gold Loaf ("vist"), Brumor's soup kitchen): per the owner (2026-10-16).
     "dusty-tome": dict(note="", map="delios", at=[4654, 2016], parent="delios", kind="sted", name="Dusty Tome – boghandel",
                        visited=True, summary="Anton har besøgt boghandleren."),
     "tower-ruins": dict(note="", map="delios", at=[4716, 939], parent="delios", kind="taarn", name="Tårnruinen"),
@@ -160,7 +160,8 @@ PLACES = {
     "operation-mongoose": dict(note="", map="delios", at=[4096, 3268], parent="delios", kind="sted", name="Operation Mongoose",
                             visited=True, summary="Gruppen var til stede ved Operation Mongoose."),
     "black-eagle": dict(note="", map="delios", at=[4016, 3106], parent="delios", kind="sted", name="Black Eagle square"),
-    "osric-loaf": dict(note="", map="delios", at=[4008, 2811], parent="delios", kind="sted", name="Osric's Gold Loaf"),
+    "osric-loaf": dict(note="", map="delios", at=[4008, 2811], parent="delios", kind="sted", name="Osric's Gold Loaf",
+                      visited=True, summary="Gruppen har været i Osric's Gold Loaf."),
     "black-portrait": dict(note="", map="delios", at=[3660, 3151], parent="delios", kind="sted", name="Black Portrait Inn",
                            visited=True, summary="Kroen, hvor gruppen har boet i Delios."),
     "herbalist": dict(note="", map="delios", at=[3586, 3628], parent="delios", kind="sted", name="Herbalist",
