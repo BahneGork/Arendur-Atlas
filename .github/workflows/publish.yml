@@ -1,0 +1,53 @@
+# Publishes the players' edition: builds it from the GM repo (BahneGork/Arendur-Atlas-GM) every hour
+# and on demand (Actions tab -> Publish players' edition -> Run workflow), and commits it here when it
+# changed. The GM build writes only what is marked players=True and stops if anything GM-only would
+# leak; then nothing is published and GitHub e-mails the owner.
+name: Publish players' edition
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency: publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: BahneGork/Arendur-Atlas-GM
+          path: gm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the players' edition
+        run: python3 gm/tools/build.py --players "$GITHUB_WORKSPACE"
+
+      - name: Commit and push if anything changed
+        id: commit
+        run: |
+          # index.html only gets a new version stamp; without other changes there is nothing to publish.
+          if [ -z "$(git status --porcelain -- data maps js css vendor)" ]; then git checkout -- index.html; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data maps js css vendor index.html
+          git commit -m "Publish players' edition"
+          git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with the workflow token may not start a Pages build on their own.
+      - name: Request Pages build
+        if: steps.commit.outputs.pushed == 'true'
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
+        env:
+          GH_TOKEN: ${{ github.token }}
