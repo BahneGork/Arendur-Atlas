@@ -1020,12 +1020,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Gruppen har været i staldene.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "operation-mongoose": {
@@ -1044,12 +1044,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Gruppen var til stede ved Operation Mongoose.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "black-eagle": {
@@ -1236,12 +1236,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Gruppen har været i The Milly Bell.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "town-hall": {
@@ -1310,12 +1310,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Gruppen har været i Jago's Jewel.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "rirroneth": {

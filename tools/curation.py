@@ -142,7 +142,8 @@ PLACES = {
     "cinderhill": dict(note="", map="blackwood", at=[258, 445], kind="vildmark", name="Cinderhill"),
 
     # --- Delios (the owner's pins) ---
-    # Delios visits below (inn, tavern, bookshop, professor, Brumor's soup kitchen): per the owner (2026-10-16).
+    # Delios visits below (inn, tavern, bookshop, professor, stables, Milly Bell, Jago's Jewel, Operation Mongoose,
+    # Brumor's soup kitchen): per the owner (2026-10-16).
     "dusty-tome": dict(note="", map="delios", at=[4654, 2016], parent="delios", kind="sted", name="Dusty Tome – boghandel",
                        visited=True, summary="Anton har besøgt boghandleren."),
     "tower-ruins": dict(note="", map="delios", at=[4716, 939], parent="delios", kind="taarn", name="Tårnruinen"),
@@ -153,8 +154,10 @@ PLACES = {
     "anden": dict(note="", map="delios", at=[4839, 2554], parent="delios", kind="sted", name="Anden tavern",
                   visited=True, summary="Nogle af gruppen har været på besøg i kroen."),
     "stormpine": dict(note="", map="delios", at=[4458, 2879], parent="delios", kind="sted", name="Stormpine Hall – gentlemen club"),
-    "osric-stables": dict(note="", map="delios", at=[4364, 2746], parent="delios", kind="sted", name="Osric's Gilded Stables"),
-    "operation-mongoose": dict(note="", map="delios", at=[4096, 3268], parent="delios", kind="sted", name="Operation Mongoose"),
+    "osric-stables": dict(note="", map="delios", at=[4364, 2746], parent="delios", kind="sted", name="Osric's Gilded Stables",
+                       visited=True, summary="Gruppen har været i staldene."),
+    "operation-mongoose": dict(note="", map="delios", at=[4096, 3268], parent="delios", kind="sted", name="Operation Mongoose",
+                            visited=True, summary="Gruppen var til stede ved Operation Mongoose."),
     "black-eagle": dict(note="", map="delios", at=[4016, 3106], parent="delios", kind="sted", name="Black Eagle square"),
     "osric-loaf": dict(note="", map="delios", at=[4008, 2811], parent="delios", kind="sted", name="Osric's Gold Loaf"),
     "black-portrait": dict(note="", map="delios", at=[3660, 3151], parent="delios", kind="sted", name="Black Portrait Inn",
@@ -163,11 +166,13 @@ PLACES = {
     "oathstone": dict(note="", map="delios", at=[3440, 3946], parent="delios", kind="helligt", name="Oathstone of the Ancients"),
     "harrt-house": dict(note="", map="delios", at=[1996, 2673], parent="delios", kind="sted", name="The Harrt House"),
     "town-square": dict(note="", map="delios", at=[3796, 2486], parent="delios", kind="sted", name="Town Square"),
-    "milly-bell": dict(note="", map="delios", at=[3811, 2224], parent="delios", kind="sted", name="The Milly Bell"),
+    "milly-bell": dict(note="", map="delios", at=[3811, 2224], parent="delios", kind="sted", name="The Milly Bell",
+                       visited=True, summary="Gruppen har været i The Milly Bell."),
     "town-hall": dict(note="", map="delios", at=[4099, 2311], parent="delios", kind="borg", name="Town Hall",
                       summary="Cedric var blandt VIP-gæsterne i borgmesterboligen under festivalen (K64)."),
     "gaeds-sanctuary": dict(note="", map="delios", at=[3982, 1830], parent="delios", kind="helligt", name="Gaed's sanctuary"),
-    "jagos-jewel": dict(note="", map="delios", at=[3414, 1674], parent="delios", kind="sted", name="Jago's Jewel"),
+    "jagos-jewel": dict(note="", map="delios", at=[3414, 1674], parent="delios", kind="sted", name="Jago's Jewel",
+                        visited=True, summary="Gruppen har været i Jago's Jewel."),
 
     # --- Off the maps ---
     "rirroneth": dict(note="", offmap="other", kind="vildmark", name="Rirroneths domæne", visited=True,
