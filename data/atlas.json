@@ -202,7 +202,7 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110).",
+   "summary": "By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110). Brumor har sat et gadekøkken op for byens hjemløse.",
    "url": "",
    "sessions": [
     11,
@@ -850,12 +850,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Anton har besøgt boghandleren.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "tower-ruins": {
@@ -972,12 +972,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Nogle af gruppen har været på besøg i kroen.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "stormpine": {
@@ -1116,12 +1116,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Kroen, hvor gruppen har boet i Delios.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "herbalist": {
@@ -1489,7 +1489,7 @@
    "factions": [],
    "sessions": [],
    "pc": true,
-   "statusNote": "Udvalgt af Silverbeard til Silver Sentinel-ordenen (K93). Døde ved Dødebjerget og blev bragt tilbage (K109).",
+   "statusNote": "Udvalgt af Silverbeard til Silver Sentinel-ordenen (K93). Døde ved Dødebjerget og blev bragt tilbage (K109). Har sat et gadekøkken op for de hjemløse i Delios.",
    "noNote": true
   },
   "anton-keene": {

@@ -76,7 +76,8 @@ PLACES = {
     # --- East Blackwood (labels on the players' map) ---
     "delios": dict(note="", map="blackwood", at=[707, 465], kind="by", visited=True,
                    summary="By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), "
-                           "og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110)."),
+                           "og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110). "
+                           "Brumor har sat et gadekøkken op for byens hjemløse."),
     "teslions": dict(note="", map="blackwood", at=[858, 768], kind="by", visited=True,
                      summary="Den sidste by før grænsen. Fik tid til at evakuere, fordi gruppen ødelagde "
                              "Skullgorge-broen (K24), men blev senere overrendt af horden (K38)."),
@@ -141,19 +142,23 @@ PLACES = {
     "cinderhill": dict(note="", map="blackwood", at=[258, 445], kind="vildmark", name="Cinderhill"),
 
     # --- Delios (the owner's pins) ---
-    "dusty-tome": dict(note="", map="delios", at=[4654, 2016], parent="delios", kind="sted", name="Dusty Tome – boghandel"),
+    # Delios visits below (inn, tavern, bookshop, professor, Brumor's soup kitchen): per the owner (2026-10-16).
+    "dusty-tome": dict(note="", map="delios", at=[4654, 2016], parent="delios", kind="sted", name="Dusty Tome – boghandel",
+                       visited=True, summary="Anton har besøgt boghandleren."),
     "tower-ruins": dict(note="", map="delios", at=[4716, 939], parent="delios", kind="taarn", name="Tårnruinen"),
     "old-church": dict(note="", map="delios", at=[5047, 1008], parent="delios", kind="helligt", name="Den gamle kirkeruin"),
     "ravenscrest": dict(note="", map="delios", at=[4707, 2693], parent="delios", kind="sted", name="Ravenscrest Emporium"),
     "egas-mannon": dict(note="", map="delios", at=[4873, 3024], parent="delios", kind="sted", name="Professor Egas Mannon",
-                        summary="Anton lærte af Egas Mannon og fik Book of the Raven (K99–K100)."),
-    "anden": dict(note="", map="delios", at=[4839, 2554], parent="delios", kind="sted", name="Anden tavern"),
+                        visited=True, summary="Anton lærte af Egas Mannon og fik Book of the Raven (K99–K100)."),
+    "anden": dict(note="", map="delios", at=[4839, 2554], parent="delios", kind="sted", name="Anden tavern",
+                  visited=True, summary="Nogle af gruppen har været på besøg i kroen."),
     "stormpine": dict(note="", map="delios", at=[4458, 2879], parent="delios", kind="sted", name="Stormpine Hall – gentlemen club"),
     "osric-stables": dict(note="", map="delios", at=[4364, 2746], parent="delios", kind="sted", name="Osric's Gilded Stables"),
     "operation-mongoose": dict(note="", map="delios", at=[4096, 3268], parent="delios", kind="sted", name="Operation Mongoose"),
     "black-eagle": dict(note="", map="delios", at=[4016, 3106], parent="delios", kind="sted", name="Black Eagle square"),
     "osric-loaf": dict(note="", map="delios", at=[4008, 2811], parent="delios", kind="sted", name="Osric's Gold Loaf"),
-    "black-portrait": dict(note="", map="delios", at=[3660, 3151], parent="delios", kind="sted", name="Black Portrait Inn"),
+    "black-portrait": dict(note="", map="delios", at=[3660, 3151], parent="delios", kind="sted", name="Black Portrait Inn",
+                           visited=True, summary="Kroen, hvor gruppen har boet i Delios."),
     "herbalist": dict(note="", map="delios", at=[3586, 3628], parent="delios", kind="sted", name="Herbalist"),
     "oathstone": dict(note="", map="delios", at=[3440, 3946], parent="delios", kind="helligt", name="Oathstone of the Ancients"),
     "harrt-house": dict(note="", map="delios", at=[1996, 2673], parent="delios", kind="sted", name="The Harrt House"),
@@ -253,7 +258,7 @@ PARTY_EXTRA = {
                            statusNote="Bærer Xerathal – Ravnekongens sværd (K76, K86)."),
     "Brumor Stålfod": dict(aliases=["Brumor"], race="", social="", role="", dead=False,
                            statusNote="Udvalgt af Silverbeard til Silver Sentinel-ordenen (K93). Døde ved Dødebjerget "
-                                      "og blev bragt tilbage (K109)."),
+                                      "og blev bragt tilbage (K109). Har sat et gadekøkken op for de hjemløse i Delios."),
     "Anton Keene": dict(aliases=["Anton"], race="", social="", role="", dead=False,
                         statusNote="Sluttede sig til gruppen ved Fallen Star (K58). Studerer hos Egas Mannon (K99–K100)."),
     "Frekka Flammehår": dict(aliases=["Frekka"], race="", social="", role="", dead=False,
