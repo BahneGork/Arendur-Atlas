@@ -1140,12 +1140,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Gruppen har været hos herbalisten.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "oathstone": {
