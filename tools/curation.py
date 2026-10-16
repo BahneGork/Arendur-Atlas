@@ -67,7 +67,7 @@ PLACES = {
                         summary="En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den."),
     "kvalec": dict(note="", map="ursia", at=[1672, 3369], kind="by",
                    summary="By mod vest. Lejesoldaterne Blackdaggers kom herfra (K2)."),
-    "east-blackwood": dict(note="", map="ursia", at=[4752, 4066], approx=True, kind="vildmark",
+    "east-blackwood": dict(note="", map="ursia", at=[5057, 4359], approx=True, kind="vildmark",
                            name="East Blackwood",
                            where="I Bedegaarn-baroniet, efter ejerens pin 'Bedegaarn barony – Duke Alvares'.",
                            summary="Skovegnen omkring Delios og Teslions, hvor det meste af kompagniets "
