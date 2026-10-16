@@ -58,12 +58,13 @@ PLACES = {
     "arendur": dict(note="", map="ursia", at=[4433, 3040], kind="by", visited=True,
                     summary="Hovedstaden, omgivet af den store mur som dværgene byggede (K95). "
                             "Her begyndte kompagniets historie med goblinhulerne tæt ved byen (K1)."),
+    # Gutbust caves = the goblin caves, and the farm was visited: per the owner (2026-10-16).
     "goblin-caves": dict(note="", parent="arendur", kind="hule", name="Gutbust-hulerne", visited=True,
                          aliases=["Goblinhulerne ved Arendur", "Gutbuster", "Gutbust hulerne"],
-                         summary="Goblinhulerne uden for Arendur (missionen Gutbuster Ooze; samme sted ifølge Bahne). "
+                         summary="Goblinhulerne uden for Arendur (missionen Gutbuster Ooze). "
                                  "Røde hånd-gobliner: goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6)."),
     "farmer-john": dict(note="", parent="arendur", kind="sted", name="Farmer Johns gård", visited=True,
-                        summary="En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den (ifølge Bahne)."),
+                        summary="En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den."),
     "kvalec": dict(note="", map="ursia", at=[1672, 3369], kind="by",
                    summary="By mod vest. Lejesoldaterne Blackdaggers kom herfra (K2)."),
     "east-blackwood": dict(note="", map="ursia", at=[4752, 4066], approx=True, kind="vildmark",
