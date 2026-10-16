@@ -102,14 +102,18 @@
   }
   for (const [id, p] of Object.entries(places)) if (p.at) addMarker(id);
   // The same place shown on further maps (e.g. a town on both the region map and the country map).
+  // Their edits are keyed "<place>@<map>".
   const extraMarkers = [];
+  const extraByKey = {};
   for (const [id, p] of Object.entries(places)) {
     for (const x of p.also || []) {
       const m = L.marker(ll(x.at), { icon: seal(id, x.approx), keyboard: true, riseOnHover: true });
       m.bindTooltip(p.name, { className: "pin-label", direction: "top", offset: [0, -38] });
       m.on("click", () => go(`sted/${id}`));
+      m.on("dragend", () => movedExtra(`${id}@${x.map}`, m.getLatLng()));
       m.addTo(layers[x.map].pins);
       extraMarkers.push([id, m]);
+      extraByKey[`${id}@${x.map}`] = { x, m, at: x.at };
     }
   }
   const regionLayers = {};
@@ -150,6 +154,11 @@
       e.classList.toggle("current", !!pinState.here?.has(id));
       e.classList.toggle("dim", (!!pinState.seen && !pinState.seen.has(id)) || (!!pinState.lit && !pinState.lit.has(id)));
       e.classList.toggle("hidden", (pinState.onlyVisited && !places[id].visited) || (pinState.onlyTravel && !hasTravel(id)));
+    }
+    for (const [key, { m }] of Object.entries(extraByKey)) {
+      m.getElement()?.classList.toggle("moved", !!edits[key]);
+      m.options.draggable = pinState.editing;
+      if (m.dragging) pinState.editing ? m.dragging.enable() : m.dragging.disable();
     }
   }
 
@@ -726,8 +735,9 @@
 
   // ---------- Edit mode: move pins, export the changes ----------
   // Changes live in this browser only; "Kopiér ændringer" hands them over for tools/apply_moves.py.
-  const EDITS_KEY = "atlas-edits";
   const REPO = campaign.repo;
+  // Per atlas: several atlases share the github.io origin and so the same localStorage.
+  const EDITS_KEY = `atlas-edits:${REPO}`;
   const editbar = $(".editbar");
   const editStatus = $(".editbar-status");
   const editExport = $(".editbar-export");
@@ -738,6 +748,8 @@
   try { edits = JSON.parse(localStorage.getItem(EDITS_KEY)) || {}; } catch { edits = {}; }
   // Edits the published data already contains (saved for everyone) are done; drop them.
   for (const [id, e] of Object.entries(edits)) {
+    const xa = extraByKey[id]?.x.at;
+    if (xa && xa[0] === e.at?.[0] && xa[1] === e.at?.[1]) { delete edits[id]; continue; }
     const p = places[id];
     if (p && p.map === e.map && p.at?.[0] === e.at?.[0] && p.at?.[1] === e.at?.[1]) delete edits[id];
   }
@@ -756,6 +768,12 @@
     saveEdits();
     applyPinState();
   }
+  function movedExtra(key, latlng) {
+    extraByKey[key].x.at = xy(latlng);
+    edits[key] = { map: extraByKey[key].x.map, at: extraByKey[key].x.at };
+    saveEdits();
+    applyPinState();
+  }
   // A location note that is not in the atlas yet becomes a plain place once it is put on the map.
   function newPlace(id, note) {
     places[id] = { name: note, note, kind: "sted", approx: true, visited: false, sessions: [], people: [],
@@ -764,6 +782,12 @@
   }
   const slug = (s) => fold(s).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   function applyEdit(id, e) {
+    if (extraByKey[id]) {
+      extraByKey[id].x.at = e.at;
+      extraByKey[id].m.setLatLng(ll(e.at));
+      return;
+    }
+    if (id.includes("@")) return; // an extra pin that no longer exists
     if (!places[id] && e.note) newPlace(id, e.note);
     const p = places[id];
     if (!p || !layers[e.map]) return;
@@ -820,6 +844,7 @@
     if (act === "done") setEditing(false);
     if (act === "reset") {
       for (const id of Object.keys(edits)) {
+        if (extraByKey[id]) { applyEdit(id, { at: extraByKey[id].at }); continue; }
         const o = original[id] || {};
         if (o.at) applyEdit(id, o);
         else if (markers[id]) {

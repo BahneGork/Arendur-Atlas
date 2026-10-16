@@ -15,6 +15,18 @@ moves = json.load(open(sys.argv[1]) if len(sys.argv) > 1 else sys.stdin)
 src = open(CURATION, encoding="utf-8").read()
 
 for pid, move in moves.items():
+    if "@" in pid:
+        # An extra pin, "<place>@<map>": its entry in the place's also=[(map, at, approx)].
+        place, map_id = pid.split("@", 1)
+        m = re.search(rf'^    "{re.escape(place)}": dict\((.*?)\),\n(?=    "|\n|}})', src, re.S | re.M)
+        pat = rf'(\("{re.escape(map_id)}", )\[[^\]]*\]'
+        if not m or not re.search(pat, m.group(1)):
+            print(f"skipped {pid}: not found in curation.py")
+            continue
+        args = re.sub(pat, rf'\g<1>[{move["at"][0]}, {move["at"][1]}]', m.group(1), count=1)
+        src = src[:m.start(1)] + args + src[m.end(1):]
+        print(f"{pid}: {move['at']}")
+        continue
     m = re.search(rf'^    "{re.escape(pid)}": dict\((.*?)\),\n(?=    "|\n|}})', src, re.S | re.M)
     if not m:
         if "note" not in move:
