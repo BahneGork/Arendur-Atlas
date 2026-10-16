@@ -1164,12 +1164,12 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Brumor har besøgt Oathstone.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "harrt-house": {

@@ -143,7 +143,7 @@ PLACES = {
 
     # --- Delios (the owner's pins) ---
     # Delios visits below (inn, tavern, bookshop, professor, stables, Milly Bell, Jago's Jewel, Operation Mongoose,
-    # church ruins (Anton), St. Gaed (Brumor), Brumor's soup kitchen): per the owner (2026-10-16).
+    # church ruins (Anton), St. Gaed and the Oathstone (Brumor), Brumor's soup kitchen): per the owner (2026-10-16).
     "dusty-tome": dict(note="", map="delios", at=[4654, 2016], parent="delios", kind="sted", name="Dusty Tome – boghandel",
                        visited=True, summary="Anton har besøgt boghandleren."),
     "tower-ruins": dict(note="", map="delios", at=[4716, 939], parent="delios", kind="taarn", name="Tårnruinen"),
@@ -164,7 +164,8 @@ PLACES = {
     "black-portrait": dict(note="", map="delios", at=[3660, 3151], parent="delios", kind="sted", name="Black Portrait Inn",
                            visited=True, summary="Kroen, hvor gruppen har boet i Delios."),
     "herbalist": dict(note="", map="delios", at=[3586, 3628], parent="delios", kind="sted", name="Herbalist"),
-    "oathstone": dict(note="", map="delios", at=[3440, 3946], parent="delios", kind="helligt", name="Oathstone of the Ancients"),
+    "oathstone": dict(note="", map="delios", at=[3440, 3946], parent="delios", kind="helligt", name="Oathstone of the Ancients",
+                     visited=True, summary="Brumor har besøgt Oathstone."),
     "harrt-house": dict(note="", map="delios", at=[1996, 2673], parent="delios", kind="sted", name="The Harrt House"),
     "town-square": dict(note="", map="delios", at=[3796, 2486], parent="delios", kind="sted", name="Town Square"),
     "milly-bell": dict(note="", map="delios", at=[3811, 2224], parent="delios", kind="sted", name="The Milly Bell",
