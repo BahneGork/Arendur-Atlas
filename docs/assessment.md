@@ -50,17 +50,17 @@ Erukana was built from a player's own notes, so everything in them was player kn
 - **Labels on maps count as content.** Use the PC map, not the GM map.
 - The GM layer is never built from or deployed to anything public (GMnostes and GitHub Pages are public). It runs locally, or in a private place the owner chooses.
 
-## 5. Decisions needed from the owner
+## 5. Answers from the owner (2026-10-16)
 
-1. **Publishing**: publish the rest of the Player Vault (95 files not yet `dg-publish: true`)? Then the player atlas can build from GMnostes and rebuild nightly like Erukana.
-2. **Sessions**: are the "Logged – Session N" sheets and the summaries safe to read for *which places* each session visited? And does the chronicle's list map to sessions 1–25?
-3. **Ursia map**: what are the red, green, purple and blue lines? GM-only or player knowledge?
-4. **Hosting**: a new public repo and GitHub Pages site (e.g. `BahneGork/Arendur-Atlas`) for the player atlas?
+- **Sessions**: the "Logged – Session N" sheets are mostly prep notes; summaries exist for some sessions only. Which session did what is hard to pin down, so the journey is left out for now. Option: journey stages from the chronicle's numbered points instead of sessions.
+- **Maps**: more maps will be added later (see README, "Adding a map").
+- **Reading**: Claude may read everything, GM notes included. The public atlas still only states player knowledge.
+- **Ursia map**: the coloured areas are the baronies, coloured by the major noble house the baron serves.
+- **Repo**: `BahneGork/Arendur-Atlas`, site at https://bahnegork.github.io/Arendur-Atlas/
 
-## 6. Plan once these are answered
+## 6. Still open
 
-1. Fork Atlassian into this folder; make the Erukana-specific spots configurable (see the skill's table) instead of hand-editing them.
-2. Maps: Ursia, East Blackwood (PC), Delios (clean base) as WebP; record original sizes.
-3. Places from "4.Locations heard of or visited" + map labels; approximate where only described.
-4. Sessions and party; people from the player vault.
-5. Show the owner each step on the site before the next.
+1. **Publishing**: only 13 of the Player Vault's notes are published in GMnostes (plus 13 cutscenes). Publishing the rest (people, handouts) would let the people register and "read the note" links work.
+2. **Barony names**: which baronies and noble houses do the players know? Then the coloured areas can become regions.
+3. **Approximate pins** around Delios (Click Claw Watch, Ravnekongens grav, Fallen Star, mausoleet, Blackbriar, rangerhytten, Blackspear-sumpen, Camp Oxbar, East Blackwood on Ursia): placed from the chronicle's directions; drag them into place on the site.
+4. **Unplaced**: Dødebjerget, Akalane, Stålridderborgen – where are they?
