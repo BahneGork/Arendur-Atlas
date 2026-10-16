@@ -30,6 +30,8 @@ jobs:
         with:
           python-version: "3.12"
 
+      - run: pip install pyyaml==6.0.2
+
       - name: Build the players' edition
         run: python3 gm/tools/build.py --players "$GITHUB_WORKSPACE"
 
