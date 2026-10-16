@@ -113,7 +113,7 @@ PLACES = {
                                "Det hemmelige våben kom herfra (K40–K41). Kompagniet er på vej herhen (K106)."),
     "blackspear-swamp": dict(note="", map="blackwood", at=[651, 161], approx=True, kind="vildmark",
                              name="Blackspear-sumpen", where="Omkring Castle Blackspear."),
-    "ranger-hut": dict(note="", map="blackwood", at=[640, 400], approx=True, kind="sted", name="Rangerhytten",
+    "ranger-hut": dict(note="", map="blackwood", at=[726, 333], approx=True, kind="sted", name="Rangerhytten",
                        where="Nordvest for Delios (de spilledes stedliste).",
                        summary="En ranger, der har overlevet en kamp med den sorte drage (K106)."),
     "bedegaarn": dict(note="", map="blackwood", at=[978, 305], kind="borg", name="Bedegaarn",
