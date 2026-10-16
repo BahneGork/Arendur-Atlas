@@ -7,6 +7,7 @@ An interactive **player atlas** for the owner's Arendur Rising campaign (the gro
 
 ## Additional Requirements
 - **Spoiler safety (most important)**: the site and repo are public and the players read them. Atlas text may only state what the players know: the Player Vault (chronicle, locations list, missions, handouts), the player map `EastBlackwood-PC.png`, and maps/handouts the players have seen. Claude may read all GM notes (owner's permission) to understand the campaign, but never copies GM-only facts into the atlas. When unsure whether players know something, ask.
+- **No owner attribution on the site**: facts the owner (the GM) tells Claude go into the atlas as plain facts. Never write "ifølge Bahne" or similar in panel text; record the source in a code comment in `curation.py` instead.
 - The build only reads the folders in `CAMPAIGN["notes_dirs"]` (`tools/curation.py`). Never add a GM folder there.
 - Every placement and panel statement must trace to a source; chronicle points are cited as (K12).
 - Read notes only; never modify the vault or the GMnostes repo from this project.
