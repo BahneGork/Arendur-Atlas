@@ -123,6 +123,29 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .signpost small { font-family: var(--font-body); font-style: italic; font-size: 12px; opacity: 0.8; }
 .signpost:hover span, .signpost:focus span { background: var(--wax-dark); }
 
+/* A place that is its own map: a small parchment scroll with rolled ends. */
+.map-scroll { background: none; border: none; }
+.map-scroll span {
+  position: relative; display: inline-flex; flex-direction: column; align-items: center; white-space: nowrap;
+  transform: translate(-50%, -50%); padding: 3px 16px 4px; cursor: pointer;
+  background: linear-gradient(var(--parchment), var(--parchment-deep));
+  border-top: 1px solid var(--parchment-edge); border-bottom: 1px solid var(--parchment-edge);
+  color: var(--ink); font-family: var(--font-title); font-size: 16px; line-height: 1.15;
+  filter: drop-shadow(0 2px 3px rgba(30, 18, 8, 0.45)); transition: transform 0.15s ease;
+}
+.map-scroll span::before, .map-scroll span::after {
+  content: ""; position: absolute; top: -4px; bottom: -4px; width: 9px; border-radius: 5px;
+  background: linear-gradient(90deg, var(--parchment-edge), var(--parchment) 45%, var(--parchment-edge));
+  border: 1px solid var(--ink-soft);
+}
+.map-scroll span::before { left: -5px; }
+.map-scroll span::after { right: -5px; }
+.map-scroll b { font-weight: normal; }
+.map-scroll small { font-family: var(--font-body); font-style: italic; font-size: 12px; color: var(--ink-soft); }
+.map-scroll:hover span, .map-scroll:focus span, .map-scroll.selected span { transform: translate(-50%, -50%) scale(1.08); }
+.map-scroll.dim { opacity: 0.28; }
+.map-scroll.hidden { display: none; }
+
 /* ---------- Side panel ---------- */
 .panel {
   position: fixed; z-index: 1002; top: 12px; right: 12px; bottom: 12px;

@@ -91,11 +91,18 @@
         ${hasTravel(id) ? '<circle class="travel-ring" cx="25.5" cy="5" r="4.2"/>' : ""}</svg></div>`,
     });
   }
+  // A place that stands for a whole other map (scroll=True) is drawn as a scroll and opens that map.
+  const mapFor = (id) => Object.keys(maps).find((k) => maps[k].place === id);
+  const scrollIcon = (id) => L.divIcon({
+    className: "map-scroll", iconSize: [0, 0],
+    html: `<span><b>${places[id].name}</b><small>Åbn kortet</small></span>`,
+  });
   function addMarker(id) {
     const p = places[id];
-    const m = L.marker(ll(p.at), { icon: seal(id), keyboard: true, riseOnHover: true });
-    m.bindTooltip(p.name, { className: "pin-label", direction: "top", offset: [0, -38] });
-    m.on("click", () => go(`sted/${id}`));
+    const scroll = p.scroll && mapFor(id);
+    const m = L.marker(ll(p.at), { icon: scroll ? scrollIcon(id) : seal(id), keyboard: true, riseOnHover: true, title: scroll ? `Åbn kortet over ${p.name}` : "" });
+    if (!scroll) m.bindTooltip(p.name, { className: "pin-label", direction: "top", offset: [0, -38] });
+    m.on("click", () => go(scroll ? `kort/${scroll}` : `sted/${id}`));
     m.on("dragend", () => moved(id, m.getLatLng()));
     m.addTo(layers[p.map].pins);
     markers[id] = m;
