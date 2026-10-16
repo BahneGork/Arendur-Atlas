@@ -4,6 +4,7 @@
   const data = await fetch(`data/atlas.json${V}`).then((r) => r.json());
   const { campaign, maps, places, regions, sessions, portals, offmap, unplaced, people, factions, threads, tools } = data;
 
+  const UNIT = campaign.unit || "Session"; // what one step of Rejsen is called
   const KIND = {
     by: "By", borg: "Borg", taarn: "Tårn", hule: "Hule & dybde", helligt: "Helligt sted",
     havn: "Havn", vildmark: "Vildmark", sted: "Sted",
@@ -293,7 +294,7 @@
   // Session chips; the party is in most sessions, so they get a summary with the list folded away.
   function sessionChips(p) {
     const list = el("div", { class: "chips" }, p.sessions.map((num) =>
-      el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`)));
+      el("a", { class: "session-link", href: `#session/${num}/laes` }, `${UNIT} ${num}`)));
     if (!p.pc || p.sessions.length <= 8) return list;
     const [first, last] = p.period || [p.sessions[0], p.sessions[p.sessions.length - 1]];
     const link = (n) => el("a", { class: "session-link", href: `#session/${n}/laes` }, `S${n}`);
@@ -458,7 +459,7 @@
         el("p", {}, el("button", { type: "button", class: "session-chip", onclick: () => go(`kort/${mid}`) }, `Åbn kortet over ${m.name} →`))),
       sess.size ? [el("h3", {}, "Her har vi været"),
         el("div", { class: "chips" }, [...sess].sort((a, b) => a - b).map((n) =>
-          el("button", { type: "button", class: "session-chip", title: sessionByNum(n)?.title, onclick: () => go(`session/${n}`) }, `Session ${n}`)))] : null,
+          el("button", { type: "button", class: "session-chip", title: sessionByNum(n)?.title, onclick: () => go(`session/${n}`) }, `${UNIT} ${n}`)))] : null,
       placeList("Steder her", kids),
       peopleSection(Object.keys(people).filter((k) => subtree(id).includes(people[k].place)),
         subtree(id).flatMap((k) => places[k].people.map(([, pid]) => pid))),
@@ -594,7 +595,7 @@
   for (const s of sessions) {
     strip.append(el("li", {}, el("button", {
       type: "button", class: `gm-${s.gm.toLowerCase()}${sessionMap(s) ? "" : " offmap"}`,
-      title: `Session ${s.num}: ${s.title}`, onclick: () => go(`session/${s.num}`),
+      title: `${UNIT} ${s.num}: ${s.title}`, onclick: () => go(`session/${s.num}`),
     }, String(s.num))));
   }
   jToggle.addEventListener("click", () => {
@@ -645,11 +646,12 @@
     const target = sessionMap(s);
     const names = s.places.map((id) => places[id].name);
     card.replaceChildren(
-      el("p", { class: "meta" }, `Session ${s.num}${s.date ? " · " + s.date : ""} · spilleder ${s.gm}`),
+      el("p", { class: "meta" }, `${UNIT} ${s.num}${s.date ? " · " + s.date : ""}${s.gm ? " · spilleder " + s.gm : ""}`),
       el("h2", {}, s.title),
+      s.summary ? el("p", {}, s.summary) : null,
       el("p", {},
         names.length ? `${[...new Set(names)].join(", ")}. ` : "Uden for kortene. ",
-        s.noteId ? el("a", { class: "read-session", href: `#session/${s.num}/laes` }, "Læs sessionen og se relaterede noter") : null),
+        s.noteId ? el("a", { class: "read-session", href: `#session/${s.num}/laes` }, campaign.readLabel || "Læs sessionen og se relaterede noter") : null),
     );
 
     // Trail: every earlier stop on this map, in order; the current session's leg in wax.
@@ -850,7 +852,7 @@
     const groups = GROUP_ORDER.map((g) => [g, related.filter((k) => all[k].group === g)
       .sort((a, b) => sessionOrder(all[a]) - sessionOrder(all[b]) || all[a].title.localeCompare(all[b].title, "da"))])
       .filter(([, ids]) => ids.length);
-    const label = (k) => (all[k].session != null ? `Session ${all[k].session}` : all[k].title);
+    const label = (k) => (all[k].session != null ? `${UNIT} ${all[k].session}` : all[k].title);
     const [placeKind, placeId] = n.place || [];
     const s = n.session != null ? sessionByNum(n.session) : null;
 
@@ -895,7 +897,7 @@
         faction.leader.length ? el("p", { class: "person-facts" }, "Leder: ",
           faction.leader.flatMap((k, i) => [i ? ", " : null, el("a", { href: `#note/${k}` }, people[k]?.name || k)])) : null,
         faction.sessions.length ? el("div", { class: "chips" }, faction.sessions.map((num) =>
-          el("a", { class: "session-link", href: `#session/${num}/laes` }, `Session ${num}`))) : null,
+          el("a", { class: "session-link", href: `#session/${num}/laes` }, `${UNIT} ${num}`))) : null,
         influenceBtn)) : null;
     const memberSection = members.length ? [el("h3", {}, `Medlemmer (${members.length})`), memberList,
       members.length > 8 ? el("button", { type: "button", class: "more",
@@ -918,7 +920,7 @@
 
     openPanel(
       el("p", { class: "kicker" }, n.group === "Sessioner" ? "Sessionslog" : person?.pc ? "Gruppen" : n.group),
-      el("h2", {}, s ? `Session ${s.num}: ${s.title}` : n.title + (person?.dead ? " †" : "")),
+      el("h2", {}, s ? `${UNIT} ${s.num}: ${s.title}` : n.title + (person?.dead ? " †" : "")),
       card,
       fcard,
       memberSection,

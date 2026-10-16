@@ -2,7 +2,9 @@
  "campaign": {
   "title": "Arendur",
   "start": "ursia",
-  "repo": "BahneGork/Arendur-Atlas"
+  "repo": "BahneGork/Arendur-Atlas",
+  "unit": "Etape",
+  "readLabel": "Læs krøniken"
  },
  "maps": {
   "ursia": {
@@ -103,7 +105,9 @@
    "travelLost": false,
    "summary": "Røde hånd-gobliner. Goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    1
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -219,7 +223,11 @@
    "travelLost": false,
    "summary": "By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    11,
+    15,
+    16
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -243,7 +251,10 @@
    "travelLost": false,
    "summary": "Den sidste by før grænsen. Fik tid til at evakuere, fordi gruppen ødelagde Skullgorge-broen (K24), men blev senere overrendt af horden (K38).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    5,
+    7
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -309,7 +320,9 @@
    "travelLost": false,
    "summary": "Lady Dagger kidnappede Pinna og Siertianna for at lokke gruppen til sit ritual (K28). I hulerne lå også købmandskaravanernes loot (K30).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    6
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -330,7 +343,9 @@
    "travelLost": false,
    "summary": "En forseglet vault i en sprække under hulerne: \"Ved Kiri-Joliths kraft og Helgen Worlocks autoritet skal denne boks/vault forblive låst\" (K31–K33).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    6
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -378,7 +393,9 @@
    "travelLost": false,
    "summary": "Røde hånd-gobliner under Warchief Ratbag. I bunden stod et dødt træ, hvor goblin-warlocks var ved at åbne en portal til Feydark (K14–K20).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    3
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -402,7 +419,9 @@
    "travelLost": false,
    "summary": "Dværgen Oxbars underjordiske ekspedition, som gruppen reddede (K13).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    2
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -429,7 +448,9 @@
    "travelLost": false,
    "summary": "Gruppen ødelagde broen i kampen mod gobliner og en grøn drage og forsinkede den røde hånds horde i flere dage (K21–K22).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    4
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -549,7 +570,9 @@
    "travelLost": false,
    "summary": "Et fort fra Ork-krigen, der beskytter vejen gennem bakkelandet op mod Delios (K61).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    11
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -576,7 +599,10 @@
    "travelLost": false,
    "summary": "Her mødte gruppen Ravnekongen, som belønnede dem med et banner (K85–K88).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    12,
+    14
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -597,7 +623,9 @@
    "travelLost": false,
    "summary": "",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    12
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -621,7 +649,9 @@
    "travelLost": false,
    "summary": "Landevejskro, hvor Anton og Frekka sluttede sig til gruppen (K57–K58). Skyggekompagniets hovedkvarter (Summary Session 47).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    10
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -645,7 +675,9 @@
    "travelLost": false,
    "summary": "Gammelt gravsted med et elverbroderet vægtæppe. Tidsmagi sendte gruppen tilbage til et overfald på hertugen 'den sorte ørn' (K54–K56).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    9
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -669,7 +701,9 @@
    "travelLost": false,
    "summary": "Munkene blev dræbt af ghouls fra en skjult krypt fra imperiet Azerumme; THE necromancer undslap (K46–K51).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    8
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -933,10 +967,12 @@
    "travelLost": false,
    "summary": "Anton lærte af Egas Mannon og fik Book of the Raven (K99–K100).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    15
+   ],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "anden": {
@@ -1245,10 +1281,12 @@
    "travelLost": false,
    "summary": "Cedric var blandt VIP-gæsterne i borgmesterboligen under festivalen (K64).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    11
+   ],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "gaeds-sanctuary": {
@@ -1314,7 +1352,9 @@
    "travelLost": false,
    "summary": "Gruppen kom hertil gennem Rirroneths hjul (K70–K71).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    13
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -1337,7 +1377,9 @@
    "travelLost": false,
    "summary": "Den celestiale elver 'Bittersweet lovers anticipation'. Ravnesværdet fuldførte lovens ritual, og borgen smuldrede (K72–K73).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    13
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -1423,14 +1465,89 @@
    "travelLost": false,
    "summary": "Gruppen udryddede udøde her; et mægtigt monster vågnede, og Brumor døde (K107–K109).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    16
+   ],
    "people": [],
    "factions": [],
    "visited": true,
    "noteId": null
   }
  },
- "people": {},
+ "people": {
+  "cedric-belmote": {
+   "name": "Cedric Belmote",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Paladin / Eldritch Knight · Vice-Consul i Skyggekompagniet",
+   "aliases": [
+    "Cedric"
+   ],
+   "factions": [],
+   "sessions": [],
+   "pc": true,
+   "statusNote": "Bærer Xerathal – Ravnekongens sværd (K76, K86).",
+   "noNote": true
+  },
+  "brumor-stalfod": {
+   "name": "Brumor Stålfod",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Cleric · Chaplain i Skyggekompagniet",
+   "aliases": [
+    "Brumor"
+   ],
+   "factions": [],
+   "sessions": [],
+   "pc": true,
+   "statusNote": "Udvalgt af Silverbeard til Silver Sentinel-ordenen (K93). Døde ved Dødebjerget og blev bragt tilbage (K109).",
+   "noNote": true
+  },
+  "anton-keene": {
+   "name": "Anton Keene",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Wizard (tid) · Chancellor Arcane i Skyggekompagniet",
+   "aliases": [
+    "Anton"
+   ],
+   "factions": [],
+   "sessions": [],
+   "pc": true,
+   "statusNote": "Sluttede sig til gruppen ved Fallen Star (K58). Studerer hos Egas Mannon (K99–K100).",
+   "noNote": true
+  },
+  "frekka-flammehar": {
+   "name": "Frekka Flammehår",
+   "place": null,
+   "stance": "ally",
+   "dead": false,
+   "status": "",
+   "race": "",
+   "social": "",
+   "role": "Barbarian (Bear Totem) / Battlemaster · Castellan i Skyggekompagniet",
+   "aliases": [
+    "Frekka"
+   ],
+   "factions": [],
+   "sessions": [],
+   "pc": true,
+   "statusNote": "Sluttede sig til gruppen ved Fallen Star (K58).",
+   "noNote": true
+  }
+ },
  "factions": {},
  "threads": [],
  "tools": {
@@ -1440,6 +1557,206 @@
   "questions": []
  },
  "regions": {},
- "sessions": [],
+ "sessions": [
+  {
+   "num": 1,
+   "title": "Oozebusters og goblinhulerne",
+   "places": [
+    "goblin-caves"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Røde hånd-gobliner i hulerne ved Arendur. Goblin boss Krazkar falder, warlocken Moogzt undslipper (K1–K10).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 2,
+   "title": "Gennem Underdark",
+   "places": [
+    "camp-oxbar"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "The Fulcrom hyrer holdet til at undersøge gobliner sydpå. Undervejs reddes dværgen Oxbars ekspedition (K12–K13).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 3,
+   "title": "Det sunkne citadel",
+   "places": [
+    "sunken-citadel"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Warchief Ratbag og en portal til Feydark. Nathaniel brænder det døde træ – og unge Nat stiger op af asken (K14–K20).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 4,
+   "title": "Skullgorge-broen",
+   "places": [
+    "skullgorge"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Broen ødelægges i kampen mod gobliner og en grøn drage. Horden forsinkes i flere dage (K21–K22).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 5,
+   "title": "Teslions forbereder sig",
+   "places": [
+    "teslions"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "En hydra på vejen. Teslions evakuerer, og Den sorte liljes Måneridder eftersøger baronens mordere (K23–K27).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 6,
+   "title": "Lady Daggers huler",
+   "places": [
+    "lady-dagger-caves",
+    "skygge-vaulten"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Pinna og Siertianna reddes fra Lady Daggers ritual. Under hulerne ligger en forseglet vault (K28–K35).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 7,
+   "title": "Teslions falder",
+   "places": [
+    "teslions"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Byen er overrendt. Krazkar er genopstået, og det hemmelige våben fra Blackspear er en avlet øgle. De overlevende eskorteres mod Stålridderborgen (K36–K44).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 8,
+   "title": "Blackbriar kloster",
+   "places": [
+    "blackbriar"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Ghouls fra en krypt fra imperiet Azerumme havde dræbt munkene. THE necromancer undslipper (K45–K51).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 9,
+   "title": "Mausoleet og den sorte ørn",
+   "places": [
+    "mausoleum"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Baghold fra en røde hånd-dødsgruppe. Tidsmagi sender gruppen tilbage for at redde hertugen 'den sorte ørn' (K52–K56).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 10,
+   "title": "Fallen Star",
+   "places": [
+    "fallen-star"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Teleporterende monstre ved landevejskroen. Anton og Frekka slår følge med gruppen (K57–K60).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 11,
+   "title": "Festival i Delios",
+   "places": [
+    "click-claw",
+    "delios",
+    "town-hall"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Forbi Click Claw Watch til festivalen i Delios. Borgmester Osric hyrer kompagniet (K61–K66).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 12,
+   "title": "Ravnekongens grav",
+   "places": [
+    "raven-tomb",
+    "rirroneth-wheel"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Ud i Click Claw-bakkelandet til Ravnekongens grav og Rirroneths hjul (K67–K70).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 13,
+   "title": "Rirroneth og Perleborgen",
+   "places": [
+    "rirroneth",
+    "pearl-fortress"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Perleborgen smuldrer, Cedric tager Ravnesværdet, og Lady Dazran viser vejen hjem (K71–K84).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 14,
+   "title": "Tilbage hos Ravnekongen",
+   "places": [
+    "raven-tomb"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Ravnekongen belønner gruppen med et banner (K85–K89).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 15,
+   "title": "Skyggekompagniet",
+   "places": [
+    "delios",
+    "egas-mannon"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "Træning i Delios, Cedrics ed, Antons studier hos Egas Mannon, og gruppen sværger ed til Skyggekompagniet (K90–K105).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  },
+  {
+   "num": 16,
+   "title": "Dødebjerget",
+   "places": [
+    "dead-mountain",
+    "delios"
+   ],
+   "url": "",
+   "date": "",
+   "gm": "",
+   "summary": "På vej mod Castle Blackspear: udøde ved Dødebjerget. Brumor dør og bringes tilbage – for en pris (K106–K110).",
+   "noteId": "the-shadow-company-book-1-red-hand-of-doom"
+  }
+ ],
  "unplaced": []
 }

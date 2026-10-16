@@ -29,7 +29,10 @@ CAMPAIGN = {
     "hubs": ["1.This is the player vault for the Arendur Rising campaign", "2.Campaign Journal",
              "4.Locations heard of or visited", "5.People", "+Mission Board", "_Cutscenes Index"],
     "skip_notes": ["README"],
-    "gm": "Bahne",
+    "gm": "",
+    # Rejsen follows the chronicle in stages, because which session did what isn't recorded (owner).
+    "unit": "Etape",
+    "readLabel": "Læs krøniken",
 }
 
 MAPS = {
@@ -188,19 +191,72 @@ OFFMAP = {
 
 REGIONS = {}
 
-# The journey. Empty until the chronicle is split into stages (see docs/assessment.md).
-SESSIONS = []
+# The journey: the player chronicle (K1–K110) grouped into stages. Which session each stage was
+# played in isn't recorded (owner, 2026-10-16), so these are stages, not sessions.
+CHRONICLE = "The Shadow Company - book 1 - Red hand of doom."
+SESSIONS = [
+    (1, "Oozebusters og goblinhulerne", ["goblin-caves"], CHRONICLE,
+     "Røde hånd-gobliner i hulerne ved Arendur. Goblin boss Krazkar falder, warlocken Moogzt undslipper (K1–K10)."),
+    (2, "Gennem Underdark", ["camp-oxbar"], CHRONICLE,
+     "The Fulcrom hyrer holdet til at undersøge gobliner sydpå. Undervejs reddes dværgen Oxbars ekspedition (K12–K13)."),
+    (3, "Det sunkne citadel", ["sunken-citadel"], CHRONICLE,
+     "Warchief Ratbag og en portal til Feydark. Nathaniel brænder det døde træ – og unge Nat stiger op af asken (K14–K20)."),
+    (4, "Skullgorge-broen", ["skullgorge"], CHRONICLE,
+     "Broen ødelægges i kampen mod gobliner og en grøn drage. Horden forsinkes i flere dage (K21–K22)."),
+    (5, "Teslions forbereder sig", ["teslions"], CHRONICLE,
+     "En hydra på vejen. Teslions evakuerer, og Den sorte liljes Måneridder eftersøger baronens mordere (K23–K27)."),
+    (6, "Lady Daggers huler", ["lady-dagger-caves", "skygge-vaulten"], CHRONICLE,
+     "Pinna og Siertianna reddes fra Lady Daggers ritual. Under hulerne ligger en forseglet vault (K28–K35)."),
+    (7, "Teslions falder", ["teslions"], CHRONICLE,
+     "Byen er overrendt. Krazkar er genopstået, og det hemmelige våben fra Blackspear er en avlet øgle. "
+     "De overlevende eskorteres mod Stålridderborgen (K36–K44)."),
+    (8, "Blackbriar kloster", ["blackbriar"], CHRONICLE,
+     "Ghouls fra en krypt fra imperiet Azerumme havde dræbt munkene. THE necromancer undslipper (K45–K51)."),
+    (9, "Mausoleet og den sorte ørn", ["mausoleum"], CHRONICLE,
+     "Baghold fra en røde hånd-dødsgruppe. Tidsmagi sender gruppen tilbage for at redde hertugen 'den sorte ørn' (K52–K56)."),
+    (10, "Fallen Star", ["fallen-star"], CHRONICLE,
+     "Teleporterende monstre ved landevejskroen. Anton og Frekka slår følge med gruppen (K57–K60)."),
+    (11, "Festival i Delios", ["click-claw", "delios", "town-hall"], CHRONICLE,
+     "Forbi Click Claw Watch til festivalen i Delios. Borgmester Osric hyrer kompagniet (K61–K66)."),
+    (12, "Ravnekongens grav", ["raven-tomb", "rirroneth-wheel"], CHRONICLE,
+     "Ud i Click Claw-bakkelandet til Ravnekongens grav og Rirroneths hjul (K67–K70)."),
+    (13, "Rirroneth og Perleborgen", ["rirroneth", "pearl-fortress"], CHRONICLE,
+     "Perleborgen smuldrer, Cedric tager Ravnesværdet, og Lady Dazran viser vejen hjem (K71–K84)."),
+    (14, "Tilbage hos Ravnekongen", ["raven-tomb"], CHRONICLE,
+     "Ravnekongen belønner gruppen med et banner (K85–K89)."),
+    (15, "Skyggekompagniet", ["delios", "egas-mannon"], CHRONICLE,
+     "Træning i Delios, Cedrics ed, Antons studier hos Egas Mannon, og gruppen sværger ed til Skyggekompagniet (K90–K105)."),
+    (16, "Dødebjerget", ["dead-mountain", "delios"], CHRONICLE,
+     "På vej mod Castle Blackspear: udøde ved Dødebjerget. Brumor dør og bringes tilbage – for en pris (K106–K110)."),
+]
 
 LOCATION_ALIASES = {}
 NOT_PLACES = set()
 
-PARTY = []
+PARTY = []  # party members with a published note (none yet)
 PARTY_STATUS = {}
 PARTY_NAMES = {}
 PARTY_PERIODS = {}
 SOLO_SESSIONS = {}
-PARTY_CLASS = {}
+# Class and Company title per PC (the owner's "Campaign bible summary"; titles were given in K102).
+PARTY_CLASS = {
+    "Cedric Belmote": "Paladin / Eldritch Knight · Vice-Consul i Skyggekompagniet",
+    "Brumor Stålfod": "Cleric · Chaplain i Skyggekompagniet",
+    "Anton Keene": "Wizard (tid) · Chancellor Arcane i Skyggekompagniet",
+    "Frekka Flammehår": "Barbarian (Bear Totem) / Battlemaster · Castellan i Skyggekompagniet",
+}
 PARTY_RACE = {}
 PARTY_ORIGIN = {}
-PARTY_EXTRA = {}
+# The PCs have no published notes, so their cards show what the chronicle says.
+PARTY_EXTRA = {
+    "Cedric Belmote": dict(aliases=["Cedric"], race="", social="", role="", dead=False,
+                           statusNote="Bærer Xerathal – Ravnekongens sværd (K76, K86)."),
+    "Brumor Stålfod": dict(aliases=["Brumor"], race="", social="", role="", dead=False,
+                           statusNote="Udvalgt af Silverbeard til Silver Sentinel-ordenen (K93). Døde ved Dødebjerget "
+                                      "og blev bragt tilbage (K109)."),
+    "Anton Keene": dict(aliases=["Anton"], race="", social="", role="", dead=False,
+                        statusNote="Sluttede sig til gruppen ved Fallen Star (K58). Studerer hos Egas Mannon (K99–K100)."),
+    "Frekka Flammehår": dict(aliases=["Frekka"], race="", social="", role="", dead=False,
+                             statusNote="Sluttede sig til gruppen ved Fallen Star (K58)."),
+}
 NOT_PEOPLE = {"Locations heard of or visited"}  # a copy of the locations list filed under People/

@@ -435,17 +435,20 @@ def main():
     session_notes = {float(re.match(r"\d+(?:\.\d+)?", t).group()): t for t, n in notes.items()
                      if n["folder"] == "" and re.match(r"^\d+(?:\.\d+)?\s*[-\s]", t)}
     # Journey entries without a session log name their own note (e.g. a mission note).
-    entry_notes = {num: extra[0] for num, _, _, *extra in SESSIONS if extra}
+    entry_note_of = {num: extra[0] for num, _, _, *extra in SESSIONS if extra}
+    # A note shared by several entries (e.g. one chronicle for every stage) isn't itself "a session".
+    shared = {t for t in entry_note_of.values() if list(entry_note_of.values()).count(t) > 1}
+    entry_notes = {num: t for num, t in entry_note_of.items() if t not in shared}
     sessions = []
-    for num, title, ids, *_ in SESSIONS:
-        t = entry_notes.get(num) or session_notes.get(num)
+    for num, title, ids, *extra in SESSIONS:
+        t = entry_note_of.get(num) or session_notes.get(num)
         if not t:
             problems.append(f"session {num}: note not found")
         d = re.match(r"^\d+\s*-?\s*(\d{2})(\d{2})(\d{2})\b", t or "")
         sessions.append({
             "num": num, "title": title, "places": ids, "url": note_url(notes.get(t)),
             "date": f"{d.group(1)}.{d.group(2)}.20{d.group(3)}" if d else "",
-            "gm": CAMPAIGN.get("gm", ""),
+            "gm": CAMPAIGN.get("gm", ""), "summary": extra[1] if len(extra) > 1 else "",
         })
 
     # Location notes nobody has curated yet, so updates can spot new places.
@@ -520,9 +523,9 @@ def main():
     for rid, r in REGIONS.items():
         regions[rid]["noteId"] = note_id.get(r["note"])
     for s in sessions:
-        s["noteId"] = note_id.get(entry_notes.get(s["num"]) or session_notes.get(s["num"]))
+        s["noteId"] = note_id.get(entry_note_of.get(s["num"]) or session_notes.get(s["num"]))
 
-    out = {"campaign": {k: CAMPAIGN[k] for k in ("title", "start", "repo")}, "maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
+    out = {"campaign": {k: CAMPAIGN[k] for k in ("title", "start", "repo", "unit", "readLabel") if k in CAMPAIGN}, "maps": MAPS, "portals": PORTALS, "offmap": OFFMAP, "places": places,
            "people": people, "factions": factions, "threads": threads, "tools": tools,
            "regions": regions, "sessions": sessions, "unplaced": unplaced}
     with open(os.path.join(ROOT, "data", "atlas.json"), "w", encoding="utf-8") as f:
