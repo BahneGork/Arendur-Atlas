@@ -418,6 +418,8 @@ def main():
                 if r["map"] == p["map"] and r["poly"] and inside(p["at"], r["poly"]):
                     p["region"] = rid
                     break
+        if not p["name"]:
+            problems.append(f"{pid}: no name (a place without a note needs name=)")
         if not p["summary"] and PLACES[pid]["note"]:
             problems.append(f"{pid}: no summary")
 

@@ -67,7 +67,7 @@
  },
  "places": {
   "arendur": {
-   "name": "",
+   "name": "Arendur",
    "kind": "by",
    "map": "ursia",
    "at": [
@@ -142,7 +142,7 @@
    "noteId": null
   },
   "kvalec": {
-   "name": "",
+   "name": "Kvalec",
    "kind": "by",
    "map": "ursia",
    "at": [
@@ -192,7 +192,7 @@
    "noteId": null
   },
   "delios": {
-   "name": "",
+   "name": "Delios",
    "kind": "by",
    "map": "blackwood",
    "at": [
@@ -230,7 +230,7 @@
    "noteId": null
   },
   "teslions": {
-   "name": "",
+   "name": "Teslions",
    "kind": "by",
    "map": "blackwood",
    "at": [

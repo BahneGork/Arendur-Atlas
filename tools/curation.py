@@ -55,7 +55,7 @@ PORTALS = [
 # kind: by | borg | taarn | hule | helligt | havn | vildmark | sted
 PLACES = {
     # --- Ursia ---
-    "arendur": dict(note="", map="ursia", at=[4433, 3040], kind="by", visited=True,
+    "arendur": dict(note="", name="Arendur", map="ursia", at=[4433, 3040], kind="by", visited=True,
                     summary="Hovedstaden, omgivet af den store mur som dværgene byggede (K95). "
                             "Her begyndte kompagniets historie med goblinhulerne tæt ved byen (K1)."),
     # Gutbust caves = the goblin caves, and the farm was visited: per the owner (2026-10-16).
@@ -65,7 +65,7 @@ PLACES = {
                                  "Røde hånd-gobliner: goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6)."),
     "farmer-john": dict(note="", parent="arendur", kind="sted", name="Farmer Johns gård", visited=True,
                         summary="En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den."),
-    "kvalec": dict(note="", map="ursia", at=[1672, 3369], kind="by",
+    "kvalec": dict(note="", name="Kvalec", map="ursia", at=[1672, 3369], kind="by",
                    summary="By mod vest. Lejesoldaterne Blackdaggers kom herfra (K2)."),
     "east-blackwood": dict(note="", map="ursia", at=[5057, 4359], approx=True, kind="vildmark",
                            name="East Blackwood",
@@ -76,12 +76,12 @@ PLACES = {
     # --- East Blackwood (labels on the players' map) ---
     # also=[(map, at, approx)]: the same place on further maps. The Ursia positions are estimates around the
     # owner's pin "Bedegaarn barony – Duke Alvares" (4752, 4066), in the open land north of the forest.
-    "delios": dict(note="", map="blackwood", at=[707, 465], kind="by", visited=True,
+    "delios": dict(note="", name="Delios", map="blackwood", at=[707, 465], kind="by", visited=True,
                    also=[("ursia", [4600, 4250], True)],
                    summary="By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), "
                            "og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110). "
                            "Brumor har sat et gadekøkken op for byens hjemløse."),
-    "teslions": dict(note="", map="blackwood", at=[858, 768], kind="by", visited=True,
+    "teslions": dict(note="", name="Teslions", map="blackwood", at=[858, 768], kind="by", visited=True,
                      also=[("ursia", [5300, 4650], True)],
                      summary="Den sidste by før grænsen. Fik tid til at evakuere, fordi gruppen ødelagde "
                              "Skullgorge-broen (K24), men blev senere overrendt af horden (K38)."),
