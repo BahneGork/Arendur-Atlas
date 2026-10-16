@@ -111,7 +111,7 @@ PLACES = {
     "blackspear": dict(note="", map="blackwood", at=[615, 140], kind="borg", name="Castle Blackspear",
                        summary="Ruiner, hvor den sorte drage Regilarix holder dværgehelten Grozon fanget (K94). "
                                "Det hemmelige våben kom herfra (K40–K41). Kompagniet er på vej herhen (K106)."),
-    "blackspear-swamp": dict(note="", map="blackwood", at=[560, 210], approx=True, kind="vildmark",
+    "blackspear-swamp": dict(note="", map="blackwood", at=[651, 161], approx=True, kind="vildmark",
                              name="Blackspear-sumpen", where="Omkring Castle Blackspear."),
     "ranger-hut": dict(note="", map="blackwood", at=[640, 400], approx=True, kind="sted", name="Rangerhytten",
                        where="Nordvest for Delios (de spilledes stedliste).",
