@@ -67,325 +67,13 @@
   }
  },
  "places": {
-  "ravenscrest": {
-   "name": "Ravenscrest Emporium",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    4707,
-    2693
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "blackspear": {
-   "name": "Castle Blackspear",
-   "kind": "borg",
-   "map": "blackwood",
-   "at": [
-    615,
-    140
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Ruiner, hvor den sorte drage Regilarix holder dværgehelten Grozon fanget (K94). Det hemmelige våben kom herfra (K40–K41). Kompagniet er på vej herhen (K106).",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "taernu": {
-   "name": "Taernu",
-   "kind": "by",
-   "map": "blackwood",
-   "at": [
-    1028,
-    555
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "tower-ruins": {
-   "name": "Tårnruinen",
-   "kind": "taarn",
-   "map": "delios",
-   "at": [
-    4716,
-    939
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "blackbriar": {
-   "name": "Blackbriar kloster",
-   "kind": "helligt",
-   "map": "blackwood",
-   "at": [
-    800,
-    660
-   ],
-   "approx": true,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "På vejen mellem Teslions og Delios (K46).",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Munkene blev dræbt af ghouls fra en skjult krypt fra imperiet Azerumme; THE necromancer undslap (K46–K51).",
-   "url": "",
-   "sessions": [
-    8
-   ],
-   "people": [
-    [
-     "Broder Aldo",
-     "broder-aldo"
-    ],
-    [
-     "Broder Fulton",
-     "broder-fulton"
-    ],
-    [
-     "Broder Thomas spada",
-     "broder-thomas-spada"
-    ],
-    [
-     "Gregor Schatz",
-     "gregor-schatz"
-    ],
-    [
-     "Ivana Schatz",
-     "ivana-schatz"
-    ]
-   ],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "gaeds-sanctuary": {
-   "name": "Gaed's sanctuary",
-   "kind": "helligt",
-   "map": "delios",
-   "at": [
-    3982,
-    1830
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [
-    "St. Gaed kirken",
-    "St. Gaed"
-   ],
-   "travel": "",
-   "travelLost": false,
-   "summary": "St. Gaed-kirken. Brumor har været i kirken.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "rirroneth": {
-   "name": "Rirroneths domæne",
-   "kind": "vildmark",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": "other",
-   "where": "Et domæne i Far Realm.",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Gruppen kom hertil gennem Rirroneths hjul (K70–K71).",
-   "url": "",
-   "sessions": [
-    13
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "pearl-fortress": {
-   "name": "Perleborgen",
-   "kind": "borg",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "rirroneth",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [
-    "Pearl Fortress"
-   ],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Den celestiale elver 'Bittersweet lovers anticipation'. Ravnesværdet fuldførte lovens ritual, og borgen smuldrede (K72–K73).",
-   "url": "",
-   "sessions": [
-    13
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "lady-dagger-shop": {
-   "name": "Lady Daggers butik",
-   "kind": "sted",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "teslions",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Lady Daggers butik og private kammer i Teslions.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "osric-loaf": {
-   "name": "Osric's Gold Loaf",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    4008,
-    2811
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Gruppen har været i Osric's Gold Loaf.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "goblin-caves": {
-   "name": "Gutbust-hulerne",
+  "lady-dagger-caves": {
+   "name": "Lady Daggers huler",
    "kind": "hule",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "arendur",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [
-    "Goblinhulerne ved Arendur",
-    "Gutbuster",
-    "Gutbust hulerne"
-   ],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Goblinhulerne uden for Arendur (missionen Gutbuster Ooze). Røde hånd-gobliner: goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6).",
-   "url": "",
-   "sessions": [
-    1
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "anadur": {
-   "name": "Anadur",
-   "kind": "by",
    "map": "blackwood",
    "at": [
-    1095,
-    25
+    1005,
+    885
    ],
    "approx": false,
    "also": [],
@@ -397,154 +85,7 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "old-church": {
-   "name": "Den gamle kirkeruin",
-   "kind": "helligt",
-   "map": "delios",
-   "at": [
-    5047,
-    1008
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Anton har været i kirkeruinerne.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "akalane": {
-   "name": "Akalane",
-   "kind": "by",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": "other",
-   "where": "På den anden side af Blackwood-skoven.",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "By som Delios handler med.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "blackspear-swamp": {
-   "name": "Blackspear-sumpen",
-   "kind": "vildmark",
-   "map": "blackwood",
-   "at": [
-    651,
-    161
-   ],
-   "approx": true,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "Omkring Castle Blackspear.",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "festering-spire": {
-   "name": "Labyrinth caves of the festering spire",
-   "kind": "hule",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "rirroneth",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "ranger-hut": {
-   "name": "Rangerhytten",
-   "kind": "sted",
-   "map": "blackwood",
-   "at": [
-    726,
-    333
-   ],
-   "approx": true,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "Nordvest for Delios (de spilledes stedliste).",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "En ranger, der har overlevet en kamp med den sorte drage (K106).",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "skygge-vaulten": {
-   "name": "Skygge-vaulten",
-   "kind": "hule",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "lady-dagger-caves",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "En forseglet vault i en sprække under hulerne: \"Ved Kiri-Joliths kraft og Helgen Worlocks autoritet skal denne boks/vault forblive låst\" (K31–K33).",
+   "summary": "Lady Dagger kidnappede Pinna og Siertianna for at lokke gruppen til sit ritual (K28). I hulerne lå også købmandskaravanernes loot (K30).",
    "url": "",
    "sessions": [
     6
@@ -554,252 +95,13 @@
    "visited": true,
    "noteId": null
   },
-  "sunken-citadel": {
-   "name": "Det sunkne citadel",
-   "kind": "hule",
-   "map": "blackwood",
-   "at": [
-    522,
-    745
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Røde hånd-gobliner under Warchief Ratbag. I bunden stod et dødt træ, hvor goblin-warlocks var ved at åbne en portal til Feydark (K14–K20).",
-   "url": "",
-   "sessions": [
-    3
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "black-portrait": {
-   "name": "Black Portrait Inn",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    3660,
-    3151
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Kroen, hvor gruppen har boet i Delios.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "delios": {
-   "name": "Delios",
-   "kind": "by",
-   "map": "blackwood",
-   "at": [
-    707,
-    465
-   ],
-   "approx": false,
-   "also": [
-    {
-     "map": "ursia",
-     "at": [
-      4895,
-      4157
-     ],
-     "approx": true
-    }
-   ],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110). Brumor har sat et gadekøkken op for byens hjemløse.",
-   "url": "",
-   "sessions": [
-    11,
-    15,
-    16
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "fallen-star": {
-   "name": "Fallen Star",
+  "red-hand-warcamp": {
+   "name": "Den røde hånds lejr",
    "kind": "sted",
    "map": "blackwood",
    "at": [
-    770,
-    575
-   ],
-   "approx": true,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "En landevejskro på vejen mod Delios (K57).",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Landevejskro, hvor Anton og Frekka sluttede sig til gruppen (K57–K58). Skyggekompagniets hovedkvarter.",
-   "url": "",
-   "sessions": [
-    10
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "teslions": {
-   "name": "Teslions",
-   "kind": "by",
-   "map": "blackwood",
-   "at": [
-    858,
-    768
-   ],
-   "approx": false,
-   "also": [
-    {
-     "map": "ursia",
-     "at": [
-      5261,
-      4115
-     ],
-     "approx": true
-    }
-   ],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Den sidste by før grænsen. Fik tid til at evakuere, fordi gruppen ødelagde Skullgorge-broen (K24), men blev senere overrendt af horden (K38).",
-   "url": "",
-   "sessions": [
-    5,
-    7
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "egas-mannon": {
-   "name": "Professor Egas Mannon",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    4873,
-    3024
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Anton lærte af Egas Mannon og fik Book of the Raven (K99–K100).",
-   "url": "",
-   "sessions": [
-    15
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "stormpine": {
-   "name": "Stormpine Hall – gentlemen club",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    4458,
-    2879
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "arendur": {
-   "name": "Arendur",
-   "kind": "by",
-   "map": "ursia",
-   "at": [
-    4433,
-    3040
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Hovedstaden, omgivet af den store mur som dværgene byggede (K95). Her begyndte kompagniets historie med goblinhulerne tæt ved byen (K1).",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "kraeltor": {
-   "name": "Kraeltor",
-   "kind": "by",
-   "map": "blackwood",
-   "at": [
-    875,
-    178
+    38,
+    445
    ],
    "approx": false,
    "also": [],
@@ -845,13 +147,13 @@
    "visited": true,
    "noteId": null
   },
-  "operation-mongoose": {
-   "name": "Operation Mongoose",
+  "egas-mannon": {
+   "name": "Professor Egas Mannon",
    "kind": "sted",
    "map": "delios",
    "at": [
-    4096,
-    3268
+    4873,
+    3024
    ],
    "approx": false,
    "also": [],
@@ -863,179 +165,23 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "Gruppen var til stede ved Operation Mongoose.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "harrt-house": {
-   "name": "The Harrt House",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    1996,
-    2673
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "dusty-tome": {
-   "name": "Dusty Tome – boghandel",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    4654,
-    2016
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Anton har besøgt boghandleren.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "anden": {
-   "name": "Anden tavern",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    4839,
-    2554
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Nogle af gruppen har været på besøg i kroen.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "gaernur": {
-   "name": "Gaernur",
-   "kind": "by",
-   "map": "blackwood",
-   "at": [
-    1027,
-    810
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "town-square": {
-   "name": "Town Square",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    3796,
-    2486
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": false,
-   "noteId": null
-  },
-  "lady-dagger-caves": {
-   "name": "Lady Daggers huler",
-   "kind": "hule",
-   "map": "blackwood",
-   "at": [
-    1005,
-    885
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Lady Dagger kidnappede Pinna og Siertianna for at lokke gruppen til sit ritual (K28). I hulerne lå også købmandskaravanernes loot (K30).",
+   "summary": "Anton lærte af Egas Mannon og fik Book of the Raven (K99–K100).",
    "url": "",
    "sessions": [
-    6
+    15
    ],
    "people": [],
    "factions": [],
    "visited": true,
    "noteId": null
   },
-  "click-claw": {
-   "name": "Click Claw Watch",
-   "kind": "borg",
+  "ranger-hut": {
+   "name": "Rangerhytten",
+   "kind": "sted",
    "map": "blackwood",
    "at": [
-    740,
-    525
+    726,
+    333
    ],
    "approx": true,
    "also": [],
@@ -1043,130 +189,11 @@
    "parent": null,
    "region": null,
    "offmap": null,
-   "where": "Ved vejen gennem bakkelandet op mod Delios.",
+   "where": "Nordvest for Delios (de spilledes stedliste).",
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "Et fort fra Ork-krigen, der beskytter vejen gennem bakkelandet op mod Delios (K61).",
-   "url": "",
-   "sessions": [
-    11
-   ],
-   "people": [
-    [
-     "Bartoz",
-     "bartoz"
-    ],
-    [
-     "Bartoz 1",
-     "bartoz-1"
-    ],
-    [
-     "Wulfram",
-     "wulfram"
-    ]
-   ],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "dead-mountain": {
-   "name": "Dødebjerget",
-   "kind": "vildmark",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": "other",
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Gruppen udryddede udøde her; et mægtigt monster vågnede, og Brumor døde (K107–K109).",
-   "url": "",
-   "sessions": [
-    16
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "mausoleum": {
-   "name": "Mausoleet",
-   "kind": "hule",
-   "map": "blackwood",
-   "at": [
-    785,
-    610
-   ],
-   "approx": true,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "Ikke langt fra Fallen Star (K54–K57).",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Gammelt gravsted med et elverbroderet vægtæppe. Tidsmagi sendte gruppen tilbage til et overfald på hertugen 'den sorte ørn' (K54–K56).",
-   "url": "",
-   "sessions": [
-    9
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "rirroneth-wheel": {
-   "name": "Rirroneths hjul",
-   "kind": "sted",
-   "map": null,
-   "at": null,
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "raven-tomb",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
-   "url": "",
-   "sessions": [
-    12
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "red-hand-warcamp": {
-   "name": "Den røde hånds lejr",
-   "kind": "sted",
-   "map": "blackwood",
-   "at": [
-    38,
-    445
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": null,
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "",
+   "summary": "En ranger, der har overlevet en kamp med den sorte drage (K106).",
    "url": "",
    "sessions": [],
    "people": [],
@@ -1174,58 +201,27 @@
    "visited": false,
    "noteId": null
   },
-  "town-hall": {
-   "name": "Town Hall",
-   "kind": "borg",
-   "map": "delios",
-   "at": [
-    4099,
-    2311
-   ],
+  "lady-dagger-shop": {
+   "name": "Lady Daggers butik",
+   "kind": "sted",
+   "map": null,
+   "at": null,
    "approx": false,
    "also": [],
    "scroll": false,
-   "parent": "delios",
+   "parent": "teslions",
    "region": null,
    "offmap": null,
    "where": "",
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "Cedric var blandt VIP-gæsterne i borgmesterboligen under festivalen (K64).",
-   "url": "",
-   "sessions": [
-    11
-   ],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "oathstone": {
-   "name": "Oathstone of the Ancients",
-   "kind": "helligt",
-   "map": "delios",
-   "at": [
-    3440,
-    3946
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Brumor har besøgt Oathstone.",
+   "summary": "Lady Daggers butik og private kammer i Teslions.",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
-   "visited": true,
+   "visited": false,
    "noteId": null
   },
   "east-blackwood": {
@@ -1286,6 +282,181 @@
    "visited": true,
    "noteId": null
   },
+  "ravenscrest": {
+   "name": "Ravenscrest Emporium",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    4707,
+    2693
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "akalane": {
+   "name": "Akalane",
+   "kind": "by",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "På den anden side af Blackwood-skoven.",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "By som Delios handler med.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "blackbriar": {
+   "name": "Blackbriar kloster",
+   "kind": "helligt",
+   "map": "blackwood",
+   "at": [
+    800,
+    660
+   ],
+   "approx": true,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "På vejen mellem Teslions og Delios (K46).",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Munkene blev dræbt af ghouls fra en skjult krypt fra imperiet Azerumme; THE necromancer undslap (K46–K51).",
+   "url": "",
+   "sessions": [
+    8
+   ],
+   "people": [
+    [
+     "Broder Aldo",
+     "broder-aldo"
+    ],
+    [
+     "Broder Fulton",
+     "broder-fulton"
+    ],
+    [
+     "Broder Thomas spada",
+     "broder-thomas-spada"
+    ],
+    [
+     "Gregor Schatz",
+     "gregor-schatz"
+    ],
+    [
+     "Ivana Schatz",
+     "ivana-schatz"
+    ]
+   ],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "rirroneth-wheel": {
+   "name": "Rirroneths hjul",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "raven-tomb",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [
+    12
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "anadur": {
+   "name": "Anadur",
+   "kind": "by",
+   "map": "blackwood",
+   "at": [
+    1095,
+    25
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "tower-ruins": {
+   "name": "Tårnruinen",
+   "kind": "taarn",
+   "map": "delios",
+   "at": [
+    4716,
+    939
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
   "steel-castle": {
    "name": "Stålridderborgen",
    "kind": "borg",
@@ -1311,24 +482,29 @@
    "visited": false,
    "noteId": null
   },
-  "farmer-john": {
-   "name": "Farmer Johns gård",
-   "kind": "sted",
-   "map": null,
-   "at": null,
-   "approx": false,
+  "camp-oxbar": {
+   "name": "Camp Oxbar",
+   "kind": "hule",
+   "map": "blackwood",
+   "at": [
+    535,
+    800
+   ],
+   "approx": true,
    "also": [],
    "scroll": false,
-   "parent": "arendur",
+   "parent": null,
    "region": null,
    "offmap": null,
-   "where": "",
+   "where": "I Underdark; kortet viser Oxbar ved det sunkne citadel.",
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den.",
+   "summary": "Dværgen Oxbars underjordiske ekspedition, som gruppen reddede (K13).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    2
+   ],
    "people": [],
    "factions": [],
    "visited": true,
@@ -1365,56 +541,32 @@
    "visited": true,
    "noteId": null
   },
-  "herbalist": {
-   "name": "Herbalist",
-   "kind": "sted",
-   "map": "delios",
-   "at": [
-    3586,
-    3628
-   ],
-   "approx": false,
-   "also": [],
-   "scroll": false,
-   "parent": "delios",
-   "region": null,
-   "offmap": null,
-   "where": "",
-   "aliases": [],
-   "travel": "",
-   "travelLost": false,
-   "summary": "Gruppen har været hos herbalisten.",
-   "url": "",
-   "sessions": [],
-   "people": [],
-   "factions": [],
-   "visited": true,
-   "noteId": null
-  },
-  "maakengorge": {
-   "name": "Maakengorge",
-   "kind": "vildmark",
+  "mausoleum": {
+   "name": "Mausoleet",
+   "kind": "hule",
    "map": "blackwood",
    "at": [
-    893,
-    868
+    785,
+    610
    ],
-   "approx": false,
+   "approx": true,
    "also": [],
    "scroll": false,
    "parent": null,
    "region": null,
    "offmap": null,
-   "where": "",
+   "where": "Ikke langt fra Fallen Star (K54–K57).",
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "",
+   "summary": "Gammelt gravsted med et elverbroderet vægtæppe. Tidsmagi sendte gruppen tilbage til et overfald på hertugen 'den sorte ørn' (K54–K56).",
    "url": "",
-   "sessions": [],
+   "sessions": [
+    9
+   ],
    "people": [],
    "factions": [],
-   "visited": false,
+   "visited": true,
    "noteId": null
   },
   "cinderhill": {
@@ -1443,13 +595,92 @@
    "visited": false,
    "noteId": null
   },
-  "milly-bell": {
-   "name": "The Milly Bell",
-   "kind": "sted",
+  "gaeds-sanctuary": {
+   "name": "Gaed's sanctuary",
+   "kind": "helligt",
    "map": "delios",
    "at": [
-    3811,
-    2224
+    3982,
+    1830
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "St. Gaed kirken",
+    "St. Gaed"
+   ],
+   "travel": "",
+   "travelLost": false,
+   "summary": "St. Gaed-kirken. Brumor har været i kirken.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "skygge-vaulten": {
+   "name": "Skygge-vaulten",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "lady-dagger-caves",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "En forseglet vault i en sprække under hulerne: \"Ved Kiri-Joliths kraft og Helgen Worlocks autoritet skal denne boks/vault forblive låst\" (K31–K33).",
+   "url": "",
+   "sessions": [
+    6
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "rirroneth": {
+   "name": "Rirroneths domæne",
+   "kind": "vildmark",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "Et domæne i Far Realm.",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Gruppen kom hertil gennem Rirroneths hjul (K70–K71).",
+   "url": "",
+   "sessions": [
+    13
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "town-hall": {
+   "name": "Town Hall",
+   "kind": "borg",
+   "map": "delios",
+   "at": [
+    4099,
+    2311
    ],
    "approx": false,
    "also": [],
@@ -1461,12 +692,89 @@
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "Gruppen har været i The Milly Bell.",
+   "summary": "Cedric var blandt VIP-gæsterne i borgmesterboligen under festivalen (K64).",
+   "url": "",
+   "sessions": [
+    11
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "arendur": {
+   "name": "Arendur",
+   "kind": "by",
+   "map": "ursia",
+   "at": [
+    4433,
+    3040
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Hovedstaden, omgivet af den store mur som dværgene byggede (K95). Her begyndte kompagniets historie med goblinhulerne tæt ved byen (K1).",
    "url": "",
    "sessions": [],
    "people": [],
    "factions": [],
    "visited": true,
+   "noteId": null
+  },
+  "festering-spire": {
+   "name": "Labyrinth caves of the festering spire",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "rirroneth",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "blackspear-swamp": {
+   "name": "Blackspear-sumpen",
+   "kind": "vildmark",
+   "map": "blackwood",
+   "at": [
+    651,
+    161
+   ],
+   "approx": true,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "Omkring Castle Blackspear.",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
    "noteId": null
   },
   "bedegaarn": {
@@ -1527,13 +835,182 @@
    "visited": false,
    "noteId": null
   },
-  "black-eagle": {
-   "name": "Black Eagle square",
+  "pearl-fortress": {
+   "name": "Perleborgen",
+   "kind": "borg",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "rirroneth",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Pearl Fortress"
+   ],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Den celestiale elver 'Bittersweet lovers anticipation'. Ravnesværdet fuldførte lovens ritual, og borgen smuldrede (K72–K73).",
+   "url": "",
+   "sessions": [
+    13
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "delios": {
+   "name": "Delios",
+   "kind": "by",
+   "map": "blackwood",
+   "at": [
+    707,
+    465
+   ],
+   "approx": false,
+   "also": [
+    {
+     "map": "ursia",
+     "at": [
+      4895,
+      4157
+     ],
+     "approx": true
+    }
+   ],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "By med tømmer-ranches i Blackwood. Gruppen kom til festival her (K62–K64), og borgmester Osric hyrede kompagniet (K66). Gruppens base mellem ekspeditionerne (K90, K110). Brumor har sat et gadekøkken op for byens hjemløse.",
+   "url": "",
+   "sessions": [
+    11,
+    15,
+    16
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "sunken-citadel": {
+   "name": "Det sunkne citadel",
+   "kind": "hule",
+   "map": "blackwood",
+   "at": [
+    522,
+    745
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Røde hånd-gobliner under Warchief Ratbag. I bunden stod et dødt træ, hvor goblin-warlocks var ved at åbne en portal til Feydark (K14–K20).",
+   "url": "",
+   "sessions": [
+    3
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "taernu": {
+   "name": "Taernu",
+   "kind": "by",
+   "map": "blackwood",
+   "at": [
+    1028,
+    555
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "black-portrait": {
+   "name": "Black Portrait Inn",
    "kind": "sted",
    "map": "delios",
    "at": [
-    4016,
-    3106
+    3660,
+    3151
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Kroen, hvor gruppen har boet i Delios.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "farmer-john": {
+   "name": "Farmer Johns gård",
+   "kind": "sted",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "arendur",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "En gård uden for Arendur. Gruppen var derude for at besøge og undersøge den.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "harrt-house": {
+   "name": "The Harrt House",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    1996,
+    2673
    ],
    "approx": false,
    "also": [],
@@ -1546,6 +1023,286 @@
    "travel": "",
    "travelLost": false,
    "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "maakengorge": {
+   "name": "Maakengorge",
+   "kind": "vildmark",
+   "map": "blackwood",
+   "at": [
+    893,
+    868
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "anden": {
+   "name": "Anden tavern",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    4839,
+    2554
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Nogle af gruppen har været på besøg i kroen.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "herbalist": {
+   "name": "Herbalist",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    3586,
+    3628
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Gruppen har været hos herbalisten.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "kraeltor": {
+   "name": "Kraeltor",
+   "kind": "by",
+   "map": "blackwood",
+   "at": [
+    875,
+    178
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "click-claw": {
+   "name": "Click Claw Watch",
+   "kind": "borg",
+   "map": "blackwood",
+   "at": [
+    740,
+    525
+   ],
+   "approx": true,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "Ved vejen gennem bakkelandet op mod Delios.",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Et fort fra Ork-krigen, der beskytter vejen gennem bakkelandet op mod Delios (K61).",
+   "url": "",
+   "sessions": [
+    11
+   ],
+   "people": [
+    [
+     "Bartoz",
+     "bartoz"
+    ],
+    [
+     "Bartoz 1",
+     "bartoz-1"
+    ],
+    [
+     "Wulfram",
+     "wulfram"
+    ]
+   ],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "fallen-star": {
+   "name": "Fallen Star",
+   "kind": "sted",
+   "map": "blackwood",
+   "at": [
+    770,
+    575
+   ],
+   "approx": true,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "En landevejskro på vejen mod Delios (K57).",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Landevejskro, hvor Anton og Frekka sluttede sig til gruppen (K57–K58). Skyggekompagniets hovedkvarter.",
+   "url": "",
+   "sessions": [
+    10
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "goblin-caves": {
+   "name": "Gutbust-hulerne",
+   "kind": "hule",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "arendur",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [
+    "Goblinhulerne ved Arendur",
+    "Gutbuster",
+    "Gutbust hulerne"
+   ],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Goblinhulerne uden for Arendur (missionen Gutbuster Ooze). Røde hånd-gobliner: goblin boss Krazkar blev besejret, warlocken Moogzt undslap (K1–K6).",
+   "url": "",
+   "sessions": [
+    1
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "stormpine": {
+   "name": "Stormpine Hall – gentlemen club",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    4458,
+    2879
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "operation-mongoose": {
+   "name": "Operation Mongoose",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    4096,
+    3268
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Gruppen var til stede ved Operation Mongoose.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "blackspear": {
+   "name": "Castle Blackspear",
+   "kind": "borg",
+   "map": "blackwood",
+   "at": [
+    615,
+    140
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Ruiner, hvor den sorte drage Regilarix holder dværgehelten Grozon fanget (K94). Det hemmelige våben kom herfra (K40–K41). Kompagniet er på vej herhen (K106).",
    "url": "",
    "sessions": [],
    "people": [],
@@ -1579,32 +1336,223 @@
    "visited": true,
    "noteId": null
   },
-  "camp-oxbar": {
-   "name": "Camp Oxbar",
-   "kind": "hule",
+  "old-church": {
+   "name": "Den gamle kirkeruin",
+   "kind": "helligt",
+   "map": "delios",
+   "at": [
+    5047,
+    1008
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Anton har været i kirkeruinerne.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "black-eagle": {
+   "name": "Black Eagle square",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    4016,
+    3106
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "oathstone": {
+   "name": "Oathstone of the Ancients",
+   "kind": "helligt",
+   "map": "delios",
+   "at": [
+    3440,
+    3946
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Brumor har besøgt Oathstone.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "dead-mountain": {
+   "name": "Dødebjerget",
+   "kind": "vildmark",
+   "map": null,
+   "at": null,
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": "other",
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Gruppen udryddede udøde her; et mægtigt monster vågnede, og Brumor døde (K107–K109).",
+   "url": "",
+   "sessions": [
+    16
+   ],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "gaernur": {
+   "name": "Gaernur",
+   "kind": "by",
    "map": "blackwood",
    "at": [
-    535,
-    800
+    1027,
+    810
    ],
-   "approx": true,
+   "approx": false,
    "also": [],
    "scroll": false,
    "parent": null,
    "region": null,
    "offmap": null,
-   "where": "I Underdark; kortet viser Oxbar ved det sunkne citadel.",
+   "where": "",
    "aliases": [],
    "travel": "",
    "travelLost": false,
-   "summary": "Dværgen Oxbars underjordiske ekspedition, som gruppen reddede (K13).",
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
+   "noteId": null
+  },
+  "osric-loaf": {
+   "name": "Osric's Gold Loaf",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    4008,
+    2811
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Gruppen har været i Osric's Gold Loaf.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "teslions": {
+   "name": "Teslions",
+   "kind": "by",
+   "map": "blackwood",
+   "at": [
+    858,
+    768
+   ],
+   "approx": false,
+   "also": [
+    {
+     "map": "ursia",
+     "at": [
+      5261,
+      4115
+     ],
+     "approx": true
+    }
+   ],
+   "scroll": false,
+   "parent": null,
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Den sidste by før grænsen. Fik tid til at evakuere, fordi gruppen ødelagde Skullgorge-broen (K24), men blev senere overrendt af horden (K38).",
    "url": "",
    "sessions": [
-    2
+    5,
+    7
    ],
    "people": [],
    "factions": [],
    "visited": true,
+   "noteId": null
+  },
+  "town-square": {
+   "name": "Town Square",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    3796,
+    2486
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": false,
    "noteId": null
   },
   "kvalec": {
@@ -1631,6 +1579,58 @@
    "people": [],
    "factions": [],
    "visited": false,
+   "noteId": null
+  },
+  "milly-bell": {
+   "name": "The Milly Bell",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    3811,
+    2224
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Gruppen har været i The Milly Bell.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
+   "noteId": null
+  },
+  "dusty-tome": {
+   "name": "Dusty Tome – boghandel",
+   "kind": "sted",
+   "map": "delios",
+   "at": [
+    4654,
+    2016
+   ],
+   "approx": false,
+   "also": [],
+   "scroll": false,
+   "parent": "delios",
+   "region": null,
+   "offmap": null,
+   "where": "",
+   "aliases": [],
+   "travel": "",
+   "travelLost": false,
+   "summary": "Anton har besøgt boghandleren.",
+   "url": "",
+   "sessions": [],
+   "people": [],
+   "factions": [],
+   "visited": true,
    "noteId": null
   }
  },
